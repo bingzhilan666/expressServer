@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>职坐标 - IT在线学习网站！轻松学编程，快乐找工作！</title>
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/reset.css">
+    <!--<link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/statics/portal/css/index3/header-none-home.css">-->
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/index.css">
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/temporary.css">
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/common/jquery-1.8.2.min.js"></script>
+    <!--<script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/sem-static/js/jquery-2.1.1.min.js"></script>-->
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/sem-static/js/binding.js"></script>
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/sem-static/js/header.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var oImg =$('.daojishi img');
+            var oInput =$('.daojishi input');
+            var str = ''; // 将得到的秒数转换成时分秒
+            var timer = null;
+            var input1 = new Date(oInput[0].value);
+            var input2 = new Date(oInput[1].value);
+            var count = 1;
+            clearInterval(timer);
+            function countdown(input) {
+                $.ajax({
+                    url : "http://www.zhizuobiao.com/cms/currentTime",
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    cache: false,
+                    success: function(timeObject){
+//                        console.log(timeObject);
+                        var value = timeObject.time;
+//                        console.log(value);
+
+                        var oNow = new Date(value);  // 获取当前时间
+                        var t = Math.floor((input - oNow )/1000) ;// 将来时间减去当前时间并且转化成秒
+                        timer = setInterval(function(){
+
+                            if(t > 0){
+                                str = toTwo(Math.floor(t/86400)) + toTwo(Math.floor(t%86400/3600)) +toTwo(Math.floor(t%86400%3600/60)) + toTwo(t%60) // 将所有的秒转化为天数 时 分 秒 的公式
+                                for(var i = 0; i < str.length; i ++){
+                                    oImg[i].src = 'http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/'+ str.charAt(i) +'.png';
+                                }
+                                t = t-1;
+                            }else{
+                                if(count == 1){
+                                    count = count+1;
+                                    countdown(input2);
+                                }
+                                $('.Also').hide();
+                                $('.Surplus').show();
+                            }
+                        }, 1000);
+                    },
+                });
+            }
+            function toTwo (n){
+                return n < 10 ? '0' + n : '' + n;
+            };
+
+
+            countdown(input1);
+        });
+
+    </script>
+</head>
+<body>
+<div style="display: none;">
+    <p>1111课程狂欢季，逆袭就这一刻</p>
+    <p>就业课程
+        立减￥1111</p>
+    <p>3张￥680
+        课程体验券</p>
+    <p>￥2480
+        课程大礼包</p>
+    <p>活动时间：仅限11月11日当天</p>
+    <p>1111主场限时钜惠：包就业系列课程立减￥1111</p>
+    <p>立即
+        领取</p>
+    <p>1111优惠券</p>
+    <p>零基础·包就业·安卓线上直播班</p>
+    <p>轻松上手/极速学会/月薪7k-30k</p>
+    <p>零基础·包就业·JavaEE直播班</p>
+    <p>技能修炼/循序渐进/月薪5k-25k</p>
+    <p>零基础·包就业·PHP线上直播班</p>
+    <p>企业项目/直击就业/月薪6k-35k</p>
+    <p>1111限时福利营：打折不过瘾，再送福利</p>
+    <p>在逆袭路上慢慢爬行无人陪伴？
+        没事，我们给你陪伴
+        3张680课程体验券让基友与你同行</p>
+    <p>课程大礼包</p>
+    <p>半路出家，有问题只能自己扛？
+        没事，我们给你解答
+        送你2480答疑冲刺课程，攻克疑难</p>
+    <p>好友免费同行：送你3张680元就业课程体验券
+        分享至朋友圈让基友与你同行！
+        限时课程礼包：提供3名好友手机号邀请他们
+        加入编程战队，送您2480课程大礼包！！！</p>
+    <p>立即参与</p>
+    <p>参与方式</p>
+</div>
+<!-- header start -->
+<div style=" position: absolute;z-index: 1000000000000000; width: 100%;" class="f2f2f2_bg clearfix">
+    <div class="index_top clearfix">
+        <a href="/index"> <img class="index_logo" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/index_logo2.png"></a>
+        <ul class="index_bnr">
+            <li style="margin-left: 20px;"><a href="/index">首页</a></li>
+            <li><a href="/courseCenter/index">课程库</a><div class="index_icon hot_top"></div></li>
+            <li><a href="/course/plan">岗位课程</a></li>
+            <li><a href="/educate/class/">就业班</a></li>
+            <li><a href="/educate/community/">社区</a></li>
+            <li><a href="/educate/app/">APP</a></li>
+        </ul>
+
+        <div class="index_menber fr">
+            <input type="text" class="fl search_input" id="search-h-t" placeholder="请输入搜索内容">
+            <div class="fl index_icon search_img" id="search_img" si="1"></div>
+            <div class="fl sculpture" id="sculpture">
+                <a target="_blank" href="https://passport.zhizuobiao.com/login?service=http://www.zhizuobiao.com/sem/11.11.html" class="login_text">登录</a>
+                <a class="regist_text">|</a>
+                <a target="_blank" href="https://passport.zhizuobiao.com/register?service=http://www.zhizuobiao.com/sem/11.11.html" class="login_text ">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- head end -->
+    <div class="bg_01" style="width: 100%;overflow: hidden;">
+        <div class="guide bg"></div>
+        <div class="top_mian">
+            <div class="Also"></div>
+            <div class="Surplus"></div>
+            <div class="Countdown">
+                <div class="lin"><img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/lin.png" height="472" alt=""></div>
+                <div class="rl_bg my_days"></div>
+                <div class="rl_bg"></div>
+                <div class="rl_bg"></div>
+                <div class="rl_bg"></div>
+                <div class="daojishi">
+                    <img class="sz1" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/0.png" width="77" alt="">
+                    <img class="sz2" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/0.png" width="77" alt="">
+                    <img class="sz3" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/0.png" width="77" alt="">
+                    <img class="sz4" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/0.png" width="77" alt="">
+                    <img class="sz5" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/0.png" width="77" alt="">
+                    <img class="sz6" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/0.png" width="77" alt="">
+                    <img class="sz7" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/0.png" width="77" alt="">
+                    <img class="sz8" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/0.png" width="77" alt="">
+                    <input style="display: none" type="text" value="Nov 11,2016 11:11:00">
+                    <input style="display: none" type="text" value="Nov 11,2016 23:11:00">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bg_02">
+        <div class="center_main">
+            <img class="erweima" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/erweima.png" alt="">
+            <img class="zhiwen" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/zhiwen.gif" alt="">
+            <a target="_blank" class="ckxq_01" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a>
+            <a target="_blank" class="ckxq_02" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a>
+            <a target="_blank" class="ckxq_03" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a>
+            <a target="_blank" class="ckxq_04" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a>
+            <a target="_blank" class="l_yhj" href="https://passport.zhizuobiao.com/login?service=http://www.zhizuobiao.com/coupons/couponsIndex">
+                <img class="yuanwai" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/singles_ljlq_scroll_02.png" alt="">
+                <img class="yuannei" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/singles_ljlq_scroll_01.png" alt="">
+                <div class="lizx"><img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/singles_ljlq.png" alt=""></div>
+                <span class="light1"></span>
+                <span class="light2"></span>
+            </a>
+        </div>
+    </div>
+    <div class="bg_03">
+        <div class="footer_mian">
+            <a target="_blank" class="licy" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a>
+            <img class="last_bg" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/last_bg.png" alt="">
+            <img class="last_01" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/temporary/last_01.png" alt="">
+            <div class="ft_yuanwai">
+
+            </div>
+        </div>
+    </div>
+
+
+<!--悬浮-->
+<div class="xuanfu">
+    <a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a>
+</div>
+<!--百度统计-->
+<div style="display: none;">
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?b8461335c30f7379a1bd366c46bead50";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!-- GA -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65740966-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+    <!-- cnzz -->
+    <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
+                : " http://");
+        document
+                .write(unescape("%3Cspan id='cnzz_stat_icon_1255814405'%3E%3C/span%3E%3Cscript src='"
+                        + cnzz_protocol
+                        + "s95.cnzz.com/z_stat.php%3Fid%3D1255814405' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $(window).scroll(function (event) {
+        var myTop = $(window).scrollTop() + 270;
+        $('.xuanfu').stop().animate({
+            'top': myTop
+        }, 500);
+    });
+</script>
+<!--请将以下码嵌入到您网页源代码的最后面，通常是</body></HTML>之后,这样在服务器升级维护的时候也不会影响您的网页打开呈现速度。-->
+<script language="javascript" src="http://pbt.zoosnet.net/JS/LsJS.aspx?siteid=PBT96160226&float=1&lng=cn"></script>
+<!--<script type="text/javascript">-->
+    <!--$(function () {-->
+        <!--var lFollowX = 0,-->
+                <!--lFollowY = 0,-->
+                <!--x = 0,-->
+                <!--y = 0,-->
+                <!--friction = 1 / 30;-->
+
+        <!--function moveBackground() {-->
+            <!--x += (lFollowX - x) * friction;-->
+            <!--y += (lFollowY - y) * friction;-->
+
+            <!--translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';-->
+
+            <!--$('.bg').css({-->
+                <!--'-webit-transform': translate,-->
+                <!--'-moz-transform': translate,-->
+                <!--'transform': translate-->
+            <!--});-->
+
+            <!--window.requestAnimationFrame(moveBackground);-->
+        <!--}-->
+
+        <!--$(window).on('mousemove click', function(e) {-->
+
+            <!--var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));-->
+            <!--var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));-->
+            <!--lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow-->
+            <!--lFollowY = (10 * lMouseY) / 100;-->
+
+        <!--});-->
+        <!--moveBackground();-->
+    <!--});-->
+<!--</script>-->

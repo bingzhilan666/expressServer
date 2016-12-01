@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <title>职坐标 - IT在线学习网站！轻松学编程，快乐找工作！</title>
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/praise.css">
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/common/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/sem-static/m/js/jquery.fullPage.min.js"></script>
+    <script>
+        var userId = window.location.href.split("userId=")[1];
+        window.history.pushState('职坐标 - IT在线学习网站！轻松学编程，快乐找工作！', 'Title', '/sem/m/html/praise_show.html?userId=' + userId);
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function(){
+            getFont();
+        }
+        function getFont(){
+            var screenWidth = oHtml.clientWidth;
+            if(screenWidth <= 320){
+                oHtml.style.fontSize = '17.778px';
+            }else if(screenWidth >= 640){
+                oHtml.style.fontSize = '35.556px';
+            }else{
+                oHtml.style.fontSize = screenWidth/(720/40)+'px';
+            }
+        }
+    </script>
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+
+            });
+            $('.fenxiang').click(function(event) {
+                $('.zhezhao').show();
+            });
+            $('.closs').click(function(event) {
+                $('.zhezhao').hide();
+            });
+            $("#register_userName").focus(function () {
+                $(".pls").hide();
+            });
+            $("#register_password").focus(function () {
+                $(".plsma").hide();
+            });
+            $("#dddd").focus(function () {
+                $(".tpyzm").hide();
+            });
+            $("#mobile_code").focus(function () {
+                $(".sjyzm").hide();
+            });
+            var myHeight=$(document).height();
+            $('.f8').css
+        });
+    </script>
+</head>
+<body>
+    <div id="dowebok">
+        <div class="section f1">
+            <div class="fenxiang">邀请小伙伴</div>
+            <div class="zhezhao">
+                <div class="closs"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

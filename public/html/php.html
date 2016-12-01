@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>职坐标 - IT在线学习网站！轻松学编程，快乐找工作！</title>
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/sem-header-footer.css">
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/index_all.css">
+
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/common/jquery-1.8.2.min.js
+"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(function (event) {
+
+                var myTop = $(window).scrollTop() + 50;
+
+                $('.ch_div').stop().animate({
+
+                    'top': myTop
+
+                }, 500);
+
+
+            });
+
+            $('.bkx').hover(function() {
+                $('.bkx .nnd').stop().animate({top:0,}, 500);
+            }, function() {
+                $('.bkx .nnd').stop().animate({top: -265,}, 500);
+            });
+            $('.bkx1').hover(function() {
+                $('.bkx1 .nnd1').stop().animate({top:0,}, 500);
+            }, function() {
+                $('.bkx1 .nnd1').stop().animate({top: -265,}, 500);
+            });
+            $('.bkx2').hover(function() {
+                $('.bkx2 .nnd2').stop().animate({top:0,}, 500);
+            }, function() {
+                $('.bkx2 .nnd2').stop().animate({top: -265,}, 500);
+            });
+
+
+
+
+
+
+
+
+            $("#phone_btn").mouseenter(function(){
+                $(".phone_div").show();
+            })
+            $("#ddd").mouseleave(function(event){
+                event.stopPropagation();
+                $(".phone_div").hide();
+            })
+
+            $("#header_name").focus(function () {
+                $(".tishi").hide();
+            });
+            $("#header_phone").focus(function () {
+                $(".tishi2").hide();
+            });
+
+            $('#true_btn').click(function () {
+                $(".targer_div").hide();
+            })
+            $('#cancle_img').click(function () {
+                $(".targer_div").hide();
+            })
+            //免费回电
+            $("#phoneform-button").click(function () {
+                var xm = "JAVA0";
+                var mv = $('#phone_phone').val();
+
+                if (mv.length != 11) {
+                    $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                    $(".text_true").html("对不起，您号码输入有误请再次输入");
+                    $(".targer_div").show();
+                    return false;
+                }
+                if (!mv.match(/1\d{10}/)) {
+                    $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                    $(".text_true").html("对不起，您号码输入有误请再次输入");
+                    $(".targer_div").show();
+                    return false;
+                }
+
+                var data = $(this).serialize(); //序列化表单数据
+
+                $.ajax({
+                    url: 'http://www.zhizuobiao.com/cms/applyuser/save',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    jsonp: "callback",
+                    jsonpCallback: "callback",
+                    data: {
+                        'name': xm,
+                        'phone': mv,
+                        'userType': $('#aff6').val(),
+                        'clientFlag': $('#aff7').val(),
+                        'auditionCategory': $('#aff8').val()
+                    },
+
+                    success: function (jsonp) {
+                        var msg = '';
+                        if (jsonp) {
+                            if (jsonp.code === 0) {
+                                //alert('您已提交申请，请不要重复提交');
+                                $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                                $(".text_true").html("您已提交申请，请不要重复提交");
+                                $(".targer_div").show();
+                            } else if (jsonp.code === 1) {
+                                $('.qk').val('');
+                                //alert('提交成功');
+                                $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/true.png");
+                                $(".text_true").html("恭喜您，稍后我们会给您回复电话");
+                                $("#phone_phone").val("");
+                                $(".targer_div").show();
+                                setReserveNumber(reserveNumber + getRandom());
+                            } else {
+                                //alert('申请信息格式错误');
+                                $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                                $(".text_true").html("申请信息格式错误");
+                                $(".targer_div").show();
+                            }
+                        }
+
+                    },
+                    error: function () {
+                        //alert('请求错误');
+                        $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                        $(".text_true").html("对不起，您抢占先机失败");
+                        $(".targer_div").show();
+                        return false;
+                    }
+
+                });
+
+                return false;
+
+
+            });
+
+        });
+
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(function (event) {
+
+                var myTop = $(window).scrollTop() + 50;
+
+                $('.ch_div').stop().animate({
+
+                    'top': myTop
+
+                }, 500);
+
+
+            });
+            $("#phone_btn").mouseenter(function(){
+                $(".phone_div").show();
+            })
+            $("#ddd").mouseleave(function(event){
+                event.stopPropagation();
+                $(".phone_div").hide();
+            })
+
+            $("#header_name").focus(function () {
+                $(".tishi").hide();
+            });
+            $("#header_phone").focus(function () {
+                $(".tishi2").hide();
+            });
+
+            $('#true_btn').click(function () {
+                $(".targer_div").hide();
+            })
+            $('#cancle_img').click(function () {
+                $(".targer_div").hide();
+            })
+            //免费回电
+            $("#phoneform-button").click(function () {
+                var xm = "JAVA0";
+                var mv = $('#phone_phone').val();
+
+                if (mv.length != 11) {
+                    $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                    $(".text_true").html("对不起，您号码输入有误请再次输入");
+                    $(".targer_div").show();
+                    return false;
+                }
+                if (!mv.match(/1\d{10}/)) {
+                    $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                    $(".text_true").html("对不起，您号码输入有误请再次输入");
+                    $(".targer_div").show();
+                    return false;
+                }
+
+                var data = $(this).serialize(); //序列化表单数据
+
+                $.ajax({
+                    url: 'http://www.zhizuobiao.com/cms/applyuser/save',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    jsonp: "callback",
+                    jsonpCallback: "callback",
+                    data: {
+                        'name': xm,
+                        'phone': mv,
+                        'userType': $('#aff6').val(),
+                        'clientFlag': $('#aff7').val(),
+                        'auditionCategory': $('#aff8').val()
+                    },
+
+                    success: function (jsonp) {
+                        var msg = '';
+                        if (jsonp) {
+                            if (jsonp.code === 0) {
+                                //alert('您已提交申请，请不要重复提交');
+                                $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                                $(".text_true").html("您已提交申请，请不要重复提交");
+                                $(".targer_div").show();
+                            } else if (jsonp.code === 1) {
+                                $('.qk').val('');
+                                //alert('提交成功');
+                                $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/true.png");
+                                $(".text_true").html("恭喜您，稍后我们会给您回复电话");
+                                $("#phone_phone").val("");
+                                $(".targer_div").show();
+                                setReserveNumber(reserveNumber + getRandom());
+                            } else {
+                                //alert('申请信息格式错误');
+                                $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                                $(".text_true").html("申请信息格式错误");
+                                $(".targer_div").show();
+                            }
+                        }
+
+                    },
+                    error: function () {
+                        //alert('请求错误');
+                        $("#true_img").attr("src", "http://iotekseo.b0.upaiyun.com/sem/img/false.png");
+                        $(".text_true").html("对不起，您抢占先机失败");
+                        $(".targer_div").show();
+                        return false;
+                    }
+
+                });
+
+                return false;
+
+
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+<div>
+    <!--头部开始-->
+    <div class="sem-header-container">
+        <div class="content clearfix">
+            <a class="hd_logo" href="javascript:;"><img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/header_logo.png" alt=""></a>
+            <ul class="clearfix">
+                <li><a  href="http://portal.testiotek.com/sem/html/index.html">首页</a></li>
+                <li><a href="http://portal.testiotek.com/sem/html/android_h.html">Android开发</a></li>
+                <li><a href="http://portal.testiotek.com/sem/html/java_h.html">Java开发</a></li>
+                <li><a class="current" href="http://portal.testiotek.com/sem/html/php_h.html">PHP开发</a></li>
+                <li><a href="http://portal.testiotek.com/sem/html/teacher.html">讲师团队</a></li>
+                <li><a href="http://portal.testiotek.com/sem/html/job.html">学员就业</a></li>
+                <li><a href="http://portal.testiotek.com/sem/html/about.html">职坐标</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部结束-->
+    <ul class="content" style="background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/index_an_ja_ph/index_php.png') top center no-repeat;">
+        <li class="banner">
+        </li>
+        <li class="three_class">
+            <ul>
+                <li>
+                    <div class="img_div bkx">
+                        <img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/index_an_ja_ph/index_a.png">
+                        <div class="nnd"><a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a><img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/index_an_ja_ph/zhezhao.png"></div>
+                    </div>
+                    <div class="class_text">
+                        <p class="title">零基础•包就业•安卓线上直播班</p>
+                        <p class="abstract">轻松上手 极速学会 月薪<span>7k-30k</span></p>
+                        <p class="abstract">挑战年薪20万的工作机会</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_div bkx1">
+                        <img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/index_an_ja_ph/index_j.png">
+                        <div class="nnd1"><a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a><img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/index_an_ja_ph/zhezhao.png"></div>
+                    </div>
+                    <div class="class_text">
+                        <p class="title">零基础•包就业•JavaEE线上直播班</p>
+                        <p class="abstract">技能修炼 循序渐进 月薪<span>5k-25k</span></p>
+                        <p class="abstract">实战学JavaEE，挑战高薪底气十足</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_div bkx2">
+                        <img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/index_an_ja_ph/index_p.png">
+                        <div class="nnd2"><a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a><img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/index_an_ja_ph/zhezhao.png"></div>
+                    </div>
+                    <div class="class_text">
+                        <p class="title">零基础•包就业•PHP线上直播班</p>
+                        <p class="abstract">企业项目 直击就业 月薪<span>6k-35k</span></p>
+                        <p class="abstract">PHP工程师技能宝典圆你的编程梦</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="train">
+            <a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a>
+            <p class="red">0基础，适合参加IT培训吗？</p>
+            <p class="white">根据不同基础，定制个性化学习计划</p>
+            <ul>
+                <li class="zero">零基础的你，只要对编程有兴趣。通过职坐标的入学测评，选择适合你的IT学科，经过系统化4-6个月的学习，即能掌握编程技术进入IT行业。</li>
+                <li class="base">基础想要提升技能的你，通过职坐标项目实战集训，塑造你的编程思维，提升你的项目操作能力，冲击升职与加薪。</li>
+                <li class="student">学生党每天有大把的碎片化时间，如何有效的利用起来呢？职坐标学生党学习计划，利用2-3个月，轻松变身IT开发工程师。</li>
+                <li class="worker">上班族需要转业或者提升，业余时间较少，职坐标每天规定学习时间计划，只要4-6个月轻松搞定，转战IT开发工程师不是梦。</li>
+            </ul>
+        </li>
+        <li class="teacher">
+            <p class="red">精英讲师</p>
+            <p class="black">顶尖师资，打造非凡学习体验</p>
+            <div class="img_div">
+                <img src="http://iotekcdn.b0.upaiyun.com/sem-static/img/index_an_ja_ph/index_teacher.png" >
+                <ul>
+                    <li class="teacher_1">拥有多年教学及研发经验。曾就职于东软集团，任公司技术研发及TeamLeader。精通Java,SSH,EJB等数据库管理系统，擅长将教育心理学应用于教学和研究工作，丰富课堂并形成领悟性教学法。</li>
+                    <li class="teacher_2">曾任Intel亚太研发中心系统架构师，在三星、Medtronic Harman等500强公司任技术研发及团队管理职务。9年以上Android和Linux嵌入式产品开发经验，精通Android系统层framework及Application层实战开发。</li>
+                    <li class="teacher_3">拥有20年以上教学及研发经验，曾在上海炎黄在线网络有限公司担任IBM合作及业务拓展部高级软件工程师。高级软件系统分析师、系统架构师，具有丰富的C语言、Linux程序设计、Java及Android教学经验。</li>
+                    <li class="teacher_4">7年IT职业培训经验，曾担任知名IT培训机构教学主管和高级讲师。多家品牌官网和App端主管，以及多家医院的官网架构师，在服务器开发语言和教学教法方面有着丰富的经验。</li>
+                </ul>
+                <a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn">想和哪个老师聊聊</a>
+            </div>
+        </li>
+        <li class="star_student">
+            <p class="white_big">明星学员</p>
+            <p class="gray">高薪就业，铸就全新人生道路</p>
+            <ul>
+                <li class="student_wan">
+                    <h4>万同学</h4>
+                    <p>就业岗位：Android开发工程师</p>
+                    <p><span>入职薪资：8k</span></p>
+                    <p>就业感言：梦想还是要有的，万一实现了呢！</p>
+                </li>
+                <li class="student_zhu">
+                    <h4>朱同学</h4>
+                    <p>就业岗位：JAVA开发工程师</p>
+                    <p><span>入职薪资：7k</span></p>
+                    <p>就业感言：女生做IT，一样可以很优秀！</p>
+                </li>
+                <li class="student_xu">
+                    <h4>徐同学</h4>
+                    <p>就业岗位：PHP开发工程师</p>
+                    <p><span>入职薪资：8.5k</span></p>
+                    <p>就业感言：文科孩纸转行做技术待遇直接逆袭!</p>
+                </li>
+                <li class="student_li">
+                    <h4>李同学</h4>
+                    <p>就业岗位：JAVA开发工程师</p>
+                    <p><span>入职薪资：7.6k</span></p>
+                    <p>就业感言：搞技术，饭碗端得牢！</p>
+                </li>
+            </ul>
+        </li>
+        <li class="works">
+            <p class="red">学员优秀作品</p>
+            <p class="black">其实，你也可以做出让人刮目相看的项目</p>
+            <a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn">我能做哪些项目</a>
+        </li>
+        <li class="company">
+            <p class="white_big">合作企业</p>
+            <p class="gray">名企合作，构建庞大就业网络</p>
+            <a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn">我能进哪些企业</a>
+        </li>
+    </ul>
+</div>
+<!--尾部开始-->
+<div class="sem_footer">
+    <p>上海海同信息科技有限公司沪ICP备13042190号Copyright Reserved</p>
+</div>
+<!--尾部结束-->
+
+<!--提交成功-->
+<div class="targer_div">
+    <div class="cancle_img" id="cancle_img"><img src="http://iotekseo.b0.upaiyun.com/sem/img/cancle.png"></div>
+    <img class="true_img" id="true_img" src="http://iotekseo.b0.upaiyun.com/sem/img/true.png">
+    <div class="text_true"><span class="text_true">恭喜您，报名成功</span></div>
+    <img src="http://iotekseo.b0.upaiyun.com/sem/img/true_btn.png" id="true_btn">
+</div>
+<!--提交成功-->
+
+
+<!--策划开始-->
+<div class="ch_div">
+    <a href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn" target="_blank"></a>
+    <a href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn" target="_blank"></a>
+    <a href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn" target="_blank"></a>
+    <a href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn" target="_blank"></a>
+    <div id="ddd">
+        <a href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn" target="_blank"  id="phone_btn" ></a>
+        <div class="phone_div">
+            <div id="phoneform">
+                <input type="text" class="phone_text" id="phone_phone" placeholder="输入您的电话号码" maxlength="11">
+
+                <input id="aff6" type="hidden" name="userType" value="3"/>
+                <input id="aff7" type="hidden" name="clientFlag" value="1"/>
+                <input id="aff8" type="hidden" name="auditionCategory" value="6"/>
+                <button class="mfhd" id="phoneform-button">免费回电</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--侧滑-->
+
+<!-- 百度统计 -->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?b8461335c30f7379a1bd366c46bead50";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!-- GA -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-65740966-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+<!-- cnzz -->
+<script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
+            : " http://");
+    document
+            .write(unescape("%3Cspan id='cnzz_stat_icon_1255814405'%3E%3C/span%3E%3Cscript src='"
+                    + cnzz_protocol
+                    + "s95.cnzz.com/z_stat.php%3Fid%3D1255814405' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+
+</html>
+<!--请将以下码嵌入到您网页源代码的最后面，通常是</body></HTML>之后,这样在服务器升级维护的时候也不会影响您的网页打开呈现速度。-->
+<script language="javascript" src="http://pbt.zoosnet.net/JS/LsJS.aspx?siteid=PBT96160226&float=1&lng=cn"></script>

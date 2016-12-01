@@ -1,0 +1,201 @@
+.content {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+.content .f_1200 {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.content .f_1200 .f1_nn {
+  width: 1000px;
+  margin: 0 auto;
+  border-bottom: solid 1px #a0a0a0;
+  padding-top: 30px;
+}
+.content .f_1200 .f1_nn span {
+  font-size: 48px;
+  color: #eb0101;
+  line-height: 95px;
+}
+.content .f_1200 .f1_nn p {
+  font-size: 36px;
+  color: #a0a0a0;
+  padding-bottom: 30px;
+}
+.content .f_1200 .duanluo {
+  margin-top: 30px;
+}
+.content .f_1200 .duanluo p {
+  font-size: 24px;
+  color: #e0e0e0;
+  line-height: 50px;
+}
+.content .f_1200 .by_01 {
+  padding-top: 135px;
+}
+.content .f1 {
+  height: 760px;
+}
+.content .f2 {
+  height: 1906px;
+  position: relative;
+}
+.content .f2 .fl01 {
+  position: absolute;
+  width: 480px;
+  height: 230px;
+}
+.content .f2 .fl01 p {
+  font-size: 20px;
+  color: #3a3a3a;
+  line-height: 45px;
+  text-align: left;
+}
+.content .f2 .f2_01 {
+  left: 650px;
+  top: 400px;
+}
+.content .f2 .f2_02 {
+  left: 100px;
+  top: 798px;
+}
+.content .f2 .f2_03 {
+  left: 650px;
+  top: 1015px;
+}
+.content .f2 .f2_04 {
+  left: 100px;
+  top: 1372px;
+}
+.content .f3 {
+  height: 1276px;
+  position: relative;
+}
+.content .f3 .by_02 {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  margin-left: -500px;
+}
+.content .f3 .nozuo {
+  position: absolute;
+  text-align: left;
+}
+.content .f3 .nozuo span {
+  font-size: 24px;
+  color: #242424;
+}
+.content .f3 .nozuo p {
+  font-size: 18px;
+  color: #656565;
+  line-height: 35px;
+  text-indent: 2em;
+}
+.content .f3 .f3_01 {
+  right: 241px;
+  top: 238px;
+}
+.content .f3 .f3_02 {
+  right: 147px;
+  top: 345px;
+}
+.content .f3 .f3_03 {
+  right: 102px;
+  top: 443px;
+}
+.content .f3 .f3_04 {
+  right: 79px;
+  top: 551px;
+}
+.content .f3 .f3_05 {
+  right: 81px;
+  top: 671px;
+}
+.content .f3 .f3_06 {
+  right: 144px;
+  top: 785px;
+}
+.content .f3 .f3_07 {
+  right: 255px;
+  top: 883px;
+}
+.content .f4 {
+  height: 2660px;
+  position: relative;
+}
+.content .f4 .by_03 {
+  position: absolute;
+  top: -210px;
+  left: 50%;
+  margin-left: -500px;
+}
+.content .f4 .xiaoluo1 {
+  position: absolute;
+  width: 620px;
+  height: 360px;
+}
+.content .f4 .xiaoluo1 span {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+}
+.content .f4 .xiaoluo1 p {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  text-align: left;
+  text-indent: 2em;
+}
+.content .f4 .luo_1 {
+  left: 636px;
+  top: 70px;
+}
+.content .f4 .luo_3 {
+  left: 636px;
+  top: 1155px;
+}
+.content .f4 .luo_5 {
+  left: 636px;
+  top: 2260px;
+}
+.content .f4 .luo_2 {
+  left: 0px;
+  top: 640px;
+}
+.content .f4 .luo_4 {
+  left: -40px;
+  top: 1715px;
+}
+.content .f5 {
+  height: 868px;
+}
+.content .f5 .f1_nn {
+  padding-top: 65px;
+}
+.content .f5 .duanluo2 {
+  margin-top: 30px;
+}
+.content .f5 .duanluo2 p {
+  font-size: 24px;
+  color: #555;
+  line-height: 50px;
+}
+.content .f6 {
+  height: 760px;
+}
+.content .f6 .f1_nn {
+  padding-top: 45px;
+}
+.content .f6 .duanluo3 {
+  padding-top: 30px;
+}
+.content .f6 .duanluo3 p {
+  font-size: 24px;
+  color: #dedede;
+  line-height: 50px;
+}
+.content .f7 {
+  height: 610px;
+}

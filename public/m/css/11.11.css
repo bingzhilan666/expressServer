@@ -1,0 +1,444 @@
+html{
+    font-size: 100%;
+}
+body{
+    font-size: 1em;
+    background:#fff url("../images/wechat11/h5-1-assets/bg.png") no-repeat fixed center;
+    background-size: cover;
+}
+.page1_title1{
+    position: absolute;
+    width: 27em;
+    height: 8.5em;
+    top: 4.95em;
+    left: 50%;
+		margin-left: -13.5em;
+    background: url("../images/wechat11/h5-1-assets/logo.png") no-repeat center;
+    background-size: contain;
+}
+.page1_title2{
+    position: absolute;
+    width: 27.455em;
+    height: 4.08em;
+    top: 16.445em;
+    left: 50%;
+		margin-left: -13.728em;
+    background: url("../images/wechat11/h5-1-assets/crazytime.png") no-repeat center;
+    background-size: contain;
+}
+.page1_line1{
+    position: absolute;
+    width: 26.52em;
+    height: 3.74em;
+    top: 22.99em;
+    left: 50%;
+		margin-left: -13.26em;
+    background: url("../images/wechat11/h5-1-assets/topline.png") no-repeat center;
+    background-size: contain;
+}
+.page1_title3{
+    position: absolute;
+    width: 51.595em;
+    height: 9.435em;
+    top: 28.175em;
+    left: 50%;
+		margin-left: -25.8em;
+    background: url("../images/wechat11/h5-1-assets/oppurtunity.png") no-repeat center;
+    background-size: contain;
+}
+.page1_title4{
+    position: absolute;
+    width: 17.085em;
+    height: 5.015em;
+    top: 32.95em;
+    left: 45%;
+    background: url("../images/wechat11/h5-1-assets/changelife.png") no-repeat center;
+    background-size: contain;
+}
+.page1_line2{
+    position: absolute;
+    width: 45.815em;
+    height: 2.125em;
+    top: 39.055em;
+    left: 50%;
+		margin-left: -22.91em;
+    background: url("../images/wechat11/h5-1-assets/bottomline.png") no-repeat center;
+    background-size: contain;
+}
+.page1_title5{
+    position: absolute;
+    width: 27.2em;
+    height: 2.04em;
+    top: 43.475em;
+    left: 50%;
+		margin-left: -13.6em;
+    background: url("../images/wechat11/h5-1-assets/activitytime.png") no-repeat center;
+    background-size: contain;
+}
+.page1_circle{
+    position: absolute;
+    width: 37.57em;
+    height: 37.4em;
+    top: 47.555em;
+    left: 50%;
+		margin-left: -18.785em;
+    background: url("../images/wechat11/h5-1-assets/circle.png") no-repeat center;
+    background-size: contain;
+}
+.page1_title6{
+    position: absolute;
+    width: 15.045em;
+    height: 7.905em;
+    top: 62.94em;
+    left: 50%;
+		margin-left: -7.523em;
+    background: url("../images/wechat11/h5-1-assets/presents.png") no-repeat center;
+    background-size: contain;
+}
+.page1_mybtn{
+    position: absolute;
+    width: 18.7em;
+    height: 5.1em;
+    top: 87.59em;
+    left: 50%;
+		margin-left: -9.35em;
+    background: url("../images/wechat11/h5-1-assets/button.png") no-repeat center;
+    background-size: contain;
+}
+/*page2 css*/
+.page2_title1{
+    position: absolute;
+    width: 37.825em;
+    height: 21.42em;
+    top: 3.395em;
+    left: 50%;
+		margin-left: -18.91em;
+    background: url("../images/wechat11/h5-2-assets/welcome.png") no-repeat center;
+    background-size: contain;
+}
+.page2_token{
+    position: absolute;
+    width: 31.195em;
+    height: 3.57em;
+    top: 27.73em;
+    left: 50%;
+		margin-left: -15.6em;
+    background: url("../images/wechat11/h5-2-assets/token.png") no-repeat center;
+    background-size: contain;
+}
+.page2_style_btn{
+    position: absolute;
+    width: 41.99em;
+    height: 18.275em;
+    top: 36.46em;
+		left: 50%;
+		margin-left: -20.995em;
+    background: url("../images/wechat11/h5-2-assets/680.png") no-repeat center;
+    background-size: contain;
+}
+.page2_incircle{
+     position: absolute;
+     width: 7.055em;
+     height: 7.055em;
+    top: 41.66em;
+    left: 21.5%;
+     background: url("../images/wechat11/h5-2-assets/incircle.png") no-repeat center;
+     background-size: contain;
+ }
+.page2_outcircle{
+    position: absolute;
+    width:8.415em;
+    height: 8.415em;
+    top: 40.98em;
+    left: 20%;
+    background: url("../images/wechat11/h5-2-assets/outcircle.png") no-repeat center;
+    background-size: contain;
+}
+.page2_title3{
+    position: absolute;
+    width: 32.3em;
+    height: 5.1em;
+    top: 56.86em;
+    left: 50%;
+		margin-left: -16.15em;
+    background: url("../images/wechat11/h5-2-assets/mybtn.png") no-repeat center;
+    background-size: contain;
+}
+.page2_tab1{
+    position: absolute;
+    width: 46.155em;
+    height: 19.805em;
+    top: 67.57em;
+    left: 50%;
+		margin-left: -23.078em;
+    background: url("../images/wechat11/h5-2-assets/explain_first.png") no-repeat center;
+    background-size: contain;
+}
+.page2_tab2{
+    position: absolute;
+    width: 46.155em;
+    height: 19.805em;
+    top: 67.57em;
+    left: 50%;
+		margin-left: -23.078em;
+    background: url("../images/wechat11/h5-2-assets/explain_second.png") no-repeat center;
+    background-size: contain;
+}
+.page2_zhi{
+    position: absolute;
+    width: 4.505em;
+    height: 3.06em;
+    top: 43.88em;
+    left: 24%;
+    background: url("../images/wechat11/h5-2-assets/zhi.png") no-repeat center;
+    background-size: contain;
+}
+.page2_tab1btn{
+    position: absolute;
+    width: 9.256em;
+    height: 3.485em;
+    top: 67.57em;
+    left:13.615em;
+    background: transparent;
+}
+.page2_tab2btn{
+    position: absolute;
+    width: 9.256em;
+    height: 3.485em;
+    top: 67.57em;
+    left:22.615em;
+    background: transparent;
+}
+.page3_btn{
+		position: absolute;
+    width: 18.7em;
+    height: 5.1em;
+    top: 98.78em;
+    left: 50%;
+		margin-left: -9.35em;
+    background: url("../images/wechat11/page3/button.png") no-repeat center;
+    background-size: contain;
+		border: none;
+}
+.page4_bg{
+		position: absolute;
+    width: 42.5em;
+    height: 48.535em;
+    top: 23.65em;
+    left: 50%;
+		margin-left: -21.25em;
+		background: url(../images/wechat11/page4/bg.png) no-repeat center;
+    background-size: contain;
+}
+.page3_needu{
+		position: absolute;
+    width: 26.605em;
+    height: 6.205em;
+    top: 23.65em;
+    left: 50%;
+		margin-left: -13.303em;
+		background: url(../images/wechat11/page3/needU.png) no-repeat center;
+    background-size: contain;
+}
+.page3_input .page3_tel1{
+		top: 37.5em;
+}
+.page3_input .page3_tel2{
+		top: 42.57em;
+}
+.page3_input .page3_name{
+	  top: 32.55em;
+}
+.page3_android{
+
+}
+.page3_input_bg{
+		position: absolute;
+    width: 49.045em;
+    height: 26.69em;
+    top: 45.65em;
+    left: 50%;
+		margin-left: -24.523em;
+		background: url(../images/wechat11/page3/input-title.png) no-repeat center;
+    background-size: contain;
+}
+.page3_radio input{
+	position:absolute;
+	width: 10.2em;
+	height: 10.2em;
+	top: 72.5em;
+	display: block;
+	overflow:hidden;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+	z-index: 999999999999999999;
+
+}
+.page3_input input{
+    position: absolute;
+    width: 20.5em;
+    height: 3.585em;
+    top: 22.5em;
+    left: 50%;
+    margin-left: -4em;
+		padding:3px;
+    background:url(../images/wechat11/page3/input-bg.png) no-repeat center;
+		background-size: cover;
+    border: none;
+    color: #fff;
+		font-size:1.5em !important;
+}
+.page3_android{
+    left: 13.4em; 
+}
+
+.page3_radio_checked{
+	position:absolute;
+	width: 10.2em;
+	height: 10.2em;
+  top: 80.5em;
+  left: -10.2em;
+	background:url(../images/wechat11/page3/circle.png) no-repeat center;
+	background-size: cover;
+	overflow:hidden;
+}
+.page3_android_checked{
+	left: 15.71em ;
+}
+.page3_java{
+	left: 23.9em ;
+}
+.page3_java_checked{
+	left: 27.6em;
+}
+.page3_php{
+	left: 35.1em ;
+}
+.page3_php_checked{
+	left: 39.55em ;
+}
+.page3_ui{
+	left: 45.9em ;
+}
+.page3_ui_checked{
+	left: 51.4em ;
+}
+.page3_course{
+		position: absolute;
+    width: 45.9em;
+    height: 14.025em;
+    top: 76.65em;
+    left: 50%;
+		margin-left: -24.523em;
+		background: url(../images/wechat11/page3/course-icon.png) no-repeat center;
+    background-size: contain;
+}
+.shelter{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top:0;
+		left: 0;
+    display: none;
+    background: rgba(0,0,0,0.89)  url("../images/wechat11/h5-2-assets/shelter.png") no-repeat center;
+}
+.myroll{
+    /* Safari 和 Chrome: */
+    -webkit-animation: myroll 2s linear infinite;
+    -moz-animation: myroll 2s linear infinite;;
+    -o-animation: myroll 2s linear infinite;
+    animation: myroll 2s linear infinite;
+}
+.myroll2{
+    /* Safari 和 Chrome: */
+    -webkit-animation: myroll2 1s ease;
+    -moz-animation: myroll2 1s ease;
+    -o-animation: myroll2 1s ease;
+    animation: myroll2 1s ease;
+}
+.myscale{
+    -webkit-animation:myscale 1s ease-in 1s;-moz-animation:myscale 1s ease-in 1s;-ms-animation:myscale 1s ease-in 1s;animation:myscale 1s ease-in 1s;
+}
+.myscaleOut{
+    -webkit-animation:myscaleOut 5s ease-in 1s;-moz-animation:myscaleOut 5s ease-in 1s;-ms-animation:myscaleOut 5s ease-in 1s;animation:myscaleOut 5s ease-in 1s;
+}
+.mycirle{
+     animation: my_rotate 2s infinite linear;
+     -moz-animation: my_rotate 2s infinite linear;
+     -webkit-animation: my_rotate 2s infinite linear;
+     -o-animation: my_rotate 2s infinite linear;
+ }
+.mycirle2{
+    animation: my_rotate2 1s infinite linear;
+    -moz-animation: my_rotate2 1s infinite linear;
+    -webkit-animation: my_rotate2 1s infinite linear;
+    -o-animation: my_rotate2 1s infinite linear;
+}
+
+/*
+animation*/
+@-webkit-keyframes myroll /* Safari 和 Chrome */
+{
+    0%   {-webkit-transform:rotate(0deg);}
+    25%  {-webkit-transform:rotate(90deg);}
+    50%  {-webkit-transform:rotate(180deg);}
+    75% {-webkit-transform:rotate(270deg);}
+    100% {-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes  myroll{
+    0%   {-moz-transform:rotate(0deg);}
+    25%  {-moz-transform:rotate(90deg);}
+    50%  {-moz-transform:rotate(180deg);}
+    75%  {-moz-transform:rotate(270deg);}
+    100% {-moz-transform:rotate(360deg);}
+}
+@keyframes myroll {
+    0%   {transform:rotate(0deg);}
+    25%  {transform:rotate(90deg);}
+    50%  {transform:rotate(180deg);}
+    75%  {transform:rotate(270deg);}
+    100% {transform:rotate(360deg);}
+}
+@-o-keyframes myroll {
+    0%   {-o-transform:rotate(0deg);}
+    25%  {-o-transform:rotate(90deg);}
+    50%  {-o-transform:rotate(180deg);}
+    75%  {-o-transform:rotate(270deg);}
+    100% {-o-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes myroll2 /* Safari 和 Chrome */
+{
+    0%   {opacity: 0;-webkit-transform:rotate(0deg);}
+
+    100% {-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes  myroll2{
+    0%   {opacity: 0;-moz-transform:rotate(0deg);}
+    25%  {-moz-transform:rotate(90deg);}
+    50%  {-moz-transform:rotate(180deg);}
+    75%  {-moz-transform:rotate(270deg);}
+    100% {-moz-transform:rotate(360deg);}
+}
+@keyframes myroll2 {
+    0%   {opacity: 0;transform:rotate(0deg);}
+
+    100% {transform:rotate(360deg);}
+}
+@-o-keyframes myroll2 {
+    0%   {opacity: 0;-o-transform:rotate(0deg);}
+    25%  {-o-transform:rotate(90deg);}
+    50%  {-o-transform:rotate(180deg);}
+    75%  {-o-transform:rotate(270deg);}
+    100% {-o-transform:rotate(360deg);}
+}
+
+.section{
+    height: 100% ;
+    position: relative ;
+    font-size: 0.857em !important;
+}
+.hidden{
+    display: none ;
+}

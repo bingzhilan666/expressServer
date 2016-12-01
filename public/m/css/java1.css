@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+/* 禁用iPhone中Safari的字号自动调整 */
+/* body {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	max-width: 720px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+ */
+/* 去除iPhone中默认的input样式 */
+input[type="submit"], input[type="reset"], input[type="button"], input {
+	-webkit-appearance: none;
+	resize: none;
+}
+
+/* 取消链接高亮  */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+div{
+	padding: 0;
+}
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* 图片自适应 */
+img {
+	width: 100%;
+	display: block;
+	height: auto;
+	padding: 0;
+	width: auto\9; /* ie8 */
+	-ms-interpolation-mode: bicubic;/*为了照顾ie图片缩放失真*/
+}
+
+/* 初始化 */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+body {
+	font-family: '微软雅黑';
+}
+em, i {
+	font-style: normal;
+}
+strong {
+	font-weight: normal;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+a {
+	text-decoration: none;
+	color: #969696;
+	/* font-family: ; */
+}
+a:hover {
+	color: #FED503;
+	text-decoration: none;
+}
+ul, ol {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+/* 初始化 */
+
+
+
+.jt_top{
+	height: 2rem;
+	width: 100%;
+	position: relative;
+}
+.jt_top img{
+	position: absolute;
+	width: 4.15rem;
+	left: 27px;
+}
+.dananner_01{
+	margin-bottom: 1rem;
+}
+.dananner_02 h2{
+	font-size:1.0rem;
+	color: #ce2323;
+	text-align: center;
+}
+.dananner_02 p{
+	font-size: 0.7rem;
+	color: #2a2a2d;
+	text-align: center;
+	padding-top: 0.3rem;
+	/* padding-bottom: 0.6rem; */
+}
+.dananner_03{
+	background-color: #f4f4f4;
+}
+
+.dananner_03 h2{
+	padding-top: 1rem;
+	font-size:1.0rem;
+	color: #ce2323;
+	text-align: center;
+}
+.dananner_03 p{
+	font-size: 0.7rem;
+	color: #2a2a2d;
+	text-align: center;
+	padding-top: 0.3rem;
+}
+.dananner_03 .weiyi{
+	padding-bottom: 0.5rem;
+}
+.dananner_04{
+	padding-top: 1rem;
+	background-color: #f4f4f4;
+	padding-bottom: 1.5rem;
+}
+.dananner_04 h2{
+	font-size:1.0rem;
+	color: #ce2323;
+	text-align: center;
+}
+.dananner_04 p{
+	font-size: 0.7rem;
+	color: #2a2a2d;
+	text-align: center;
+	padding-top: 0.3rem;
+	/* padding-bottom: 0.6rem; */
+}
+.dananner_05{
+	padding-top: 1rem;
+}
+.dananner_05 h2{
+	font-size:1.0rem;
+	color: #ce2323;
+	text-align: center;
+}
+.dananner_05 p{
+	font-size: 0.7rem;
+	color: #2a2a2d;
+	text-align: center;
+	padding-top: 0.3rem;
+	padding-bottom: 0.7rem;
+}
+.dananner_06{
+	margin-top: 1.4rem;
+}
+.dananner_07{
+	padding-bottom: 3rem;
+	background-color: #2a2a2d;
+	position: relative;
+}
+.dananner_07 h2{
+	font-size:1.0rem;
+	color: #ce2323;
+	text-align: center;
+	margin-top: 2.25rem;
+	margin-bottom: 0.9rem;
+}
+.dananner_07 p{
+	font-size: 0.7rem;
+	color: #979798;
+	text-align: center;margin-top: 4rem;
+}
+.dananner_07 a{
+	position: absolute;
+	display: inline-block;
+	width: 8rem;
+	left: 49.8%;
+	margin-left: -4rem;
+}
+.dananner_08{
+	/* height: 2.55rem; */
+	width: 100%;
+	bottom: 0;
+	background-color: #fff;
+}
+
+.dananner_08 a{
+	display: inline-block;
+	width: 49.8%;
+	/* height: 2.55rem; */
+	
+}
+.dananner_08 .shixue{
+	float: left;
+}
+.dananner_08 .zaixian{
+
+	float: right;
+}
+.dananner_08{
+	position: fixed;
+	bottom: 0;
+}
+.xuanfu{
+	display: inline-block;
+	width: 1.575rem;
+	/* height: 305px; */
+	/* background-color: pink; */
+	/* background: url(../images/celan.png) no-repeat; */
+	position: absolute;
+	top: 100px;
+	right: 5px;
+}
+.tanchu{
+	position: fixed;
+	top: 10px;
+	width: 76%;
+	top: 27%;
+	left: 11%;
+}
+.tanchu img{
+	
+}
+.tanchu .loss{
+	position: absolute;
+	width: 8%;
+	height: 10% ;
+	right: 4%;
+	top: 5%;
+	cursor:pointer;
+}
+.tanchu a{
+	position: absolute;
+	display: inline-block;
+	width: 44%;
+	height: 16% ;
+	right: 28%;
+	top: 73%;
+}
+.heipin{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}

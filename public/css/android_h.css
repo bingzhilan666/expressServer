@@ -1,0 +1,736 @@
+.web_1200 {
+    height: 80px;
+    width: 100%;
+}
+
+.top {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.top img {
+    margin-top: 19px;
+    float: left;
+}
+
+/* Header Start */
+.header-link {
+    float: right;
+    width: 260px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 19px;
+    margin-left: 1107px;
+    position: relative;
+    bottom: 50px;
+}
+
+.header-link .free-learn, .online-consult {
+    display: inline-block;
+    width: 126px;
+}
+
+.free-learn-a {
+    background-image: url("http://iotekseo.b0.upaiyun.com/sem/img/link/free-learn-leave.png");
+    width: 125px;
+    height: 35px;
+    display: block;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.free-learn-a:hover {
+    background-image: url("http://iotekseo.b0.upaiyun.com/sem/img/link/free-learn-hover.png");
+}
+
+.online-consult-a {
+    background-image: url("http://iotekseo.b0.upaiyun.com/sem/img/link/online-consult-leave.png");
+    width: 125px;
+    height: 35px;
+    display: block;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.online-consult-a:hover {
+    background-image: url("http://iotekseo.b0.upaiyun.com/sem/img/link/online-consult-hover.png");
+}
+
+/* Header End */
+.fotter {
+    position: absolute;
+    display: inline-block;
+    width: 843px;
+    height: 446px;
+    left: 50%;
+    margin-left: -421px;
+    margin-top: -552px;
+
+}
+
+.fotter h2 {
+    text-align: center;
+    font-size: 76px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.fotter h3 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 102px;
+    color: #fff;
+}
+
+.fotter p {
+    text-align: center;
+    font-size: 22px;
+    height: 40px;
+
+    color: #fff;
+}
+
+.fotter .lh {
+    margin-top: 20px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.fotter input {
+    width: 580px;
+    height: 42px;
+    background-color: #dadfe3;
+    border: medium none;
+    margin-left: 5px;
+    outline: none;
+    line-height: 42px;
+    text-indent: 1em;
+    font-size: 20px;
+
+    padding-right: 10px;
+}
+
+.tishi {
+    color: #dd001f;
+    margin-left: -137px;
+    font-size: 20px;
+    display: none;
+}
+
+.tishi2 {
+    color: #dd001f;
+    margin-left: -197px;
+    font-size: 20px;
+    display: none;
+}
+
+.targer_div {
+    display: none;
+    text-align: center;
+    background: url('http://iotekseo.b0.upaiyun.com/sem/img/targer_bg.png') 0 0 no-repeat;
+    width: 378px;
+    height: 413px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -189px;
+    margin-top: -206px;
+    z-index: 1002222;
+}
+
+.cancle_img {
+    float: right;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.true_img {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.text_true {
+    font-size: 20px;
+    color: #444;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#true_btn {
+    cursor: pointer;
+}
+
+.fotter .sq {
+    width: 220px;
+    height: 60px;
+    margin-top: 45px;
+    margin-left: 315px;
+    border: medium none;
+    background: url('http://iotekseo.b0.upaiyun.com/sem/img/1.png') 0 0 no-repeat;
+    cursor: pointer;
+    color: #fff;
+    font-size: 27px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 8px;
+
+}
+
+.t_li {
+    padding-top: 206px;
+    height: 462px;
+}
+
+.t_hz {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.t_first li {
+    float: left;
+    width: 118px;
+    height: 85px;
+    padding-top: 50px;
+    background: url('http://iotekseo.b0.upaiyun.com/sem/img/t_.png') 0 0 no-repeat;
+    text-align: center;
+    margin: 1px;
+
+}
+
+.t_first li:hover {
+    background: url('http://iotekseo.b0.upaiyun.com/sem/img/t_hover.png') 0 0 no-repeat;
+}
+
+.t_first .b_g:hover {
+    background: transparent;
+}
+
+.t_two {
+    position: relative;
+    top: -34px;
+    left: 60px;
+
+}
+
+.t_three {
+    position: relative;
+    top: -68px;
+    left: 0;
+
+}
+
+.t_first .b_g {
+    background: transparent;
+}
+
+.f_fatab {
+    position: relative;
+}
+
+.f_tab ul li {
+    width: 1014px;
+    height: 478px;
+    z-index: 10;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -507px;
+    display: none;
+}
+
+.f_tab ol {
+    width: 492px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -279px;
+    z-index: 11;
+    overflow: hidden;
+    zoom: 1;
+    /* background-color: red; */
+
+}
+
+.f_tab ol li {
+    width: 123px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+}
+
+/*  左侧悬浮样式开始  */
+.fixed-left {
+    z-index: 999;
+    position: absolute;
+    left: 5px;
+    top: 30%;
+    width: 188px;
+    height: 344px;
+}
+
+.fixed-left .fix-l {
+    display: block;
+    width: 188px;
+    height: 86px;
+}
+
+.fixed-left .fix-l1 {
+    background-color: #ffe400;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/fix-left1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fixed-left .fix-l1:hover, .fixed-left .fix-l3:hover {
+    background-color: #ffd200;
+}
+
+.fixed-left .fix-l2 {
+    background-color: #ecd300;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/fix-left2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fixed-left .fix-l2:hover, .fixed-left .fix-l4:hover {
+    background-color: #d9c200;
+}
+
+.fixed-left .fix-l3 {
+    background-color: #ffe400;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/fix-left3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fixed-left .fix-l4 {
+    background-color: #ecd300;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/fix-left4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*  左侧悬浮样式结束  */
+
+/* Scale Start */
+.scale-circle-1 {
+    background: url("http://iotekseo.b0.upaiyun.com/sem/img/scale/circle-leave.png") no-repeat;
+    height: 158px;
+    width: 157px;
+    position: relative;
+    left: 477px;
+    top: 244px;
+    z-index: 1;
+    -moz-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.scale-circle-1:hover {
+    background: url("http://iotekseo.b0.upaiyun.com/sem/img/scale/circle-hover.png") no-repeat;
+    height: 172px;
+    width: 172px;
+    position: relative;
+    left: 470px;
+    top: 238px;
+    z-index: 1;
+}
+
+.scale-circle-2 {
+    background: url("http://iotekseo.b0.upaiyun.com/sem/img/scale/circle-2-leave.png") no-repeat;
+    height: 152px;
+    width: 152px;
+    position: absolute;
+    left: 851px;
+    top: 202px;
+    float: left;
+    z-index: 1;
+    -moz-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.scale-circle-2:hover {
+    background: url("http://iotekseo.b0.upaiyun.com/sem/img/scale/circle-2-hover.png") no-repeat;
+    height: 174px;
+    width: 174px;
+    position: absolute;
+    left: 841px;
+    top: 195px;
+    z-index: 1;
+}
+
+.scale-circle-3 {
+    background: url("http://iotekseo.b0.upaiyun.com/sem/img/scale/circle-3-leave.png") no-repeat;
+    height: 88px;
+    width: 88px;
+    position: absolute;
+    left: 995px;
+    top: 758px;
+    z-index: 99;
+    -moz-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.scale-circle-3:hover {
+    background: url("http://iotekseo.b0.upaiyun.com/sem/img/scale/circle-3-hover.png") no-repeat;
+    height: 119px;
+    width: 119px;
+    position: absolute;
+    left: 979px;
+    top: 744px;
+    z-index: 99;
+}
+
+/* Scale End */
+/*  按钮变色  */
+.full-butt1 {
+    width: 100%;
+    text-align: center;
+}
+
+.full-butt1-1200 {
+    position: relative;
+    width: 1200px;
+    height: 552px;
+    margin: auto;
+}
+
+.full-butt1-1200 .att1 {
+    position: absolute;
+    left: 5px;
+    bottom: 65px;
+    display: block;
+    width: 232px;
+    height: 55px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt1.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt1-1200 .att1:hover {
+    background-position: 0 -62px;
+}
+
+.full-butt3-1200 {
+    position: relative;
+    width: 1200px;
+    height: 613px;
+    margin: auto;
+}
+
+.full-butt3-1200 .att3 {
+    position: absolute;
+    left: 470px;
+    bottom: 38px;
+    display: block;
+    width: 261px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt2.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt3-1200 .att3:hover {
+    background-position: 0 -47px;
+}
+
+.full-butt4-1200 {
+    position: relative;
+    width: 1200px;
+    height: 689px;
+    margin: auto;
+}
+
+.full-butt4-1200 .att4 {
+    position: absolute;
+    left: 480px;
+    bottom: 40px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt3.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt4-1200 .att4:hover {
+    background-position: 0 -47px;
+}
+
+.full-butt5-1200 {
+    position: relative;
+    width: 1200px;
+    height: 672px;
+    margin: auto;
+}
+
+.full-butt5-1200 .att51 {
+    position: absolute;
+    left: 206px;
+    bottom: 62px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt51.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt5-1200 .att51:hover {
+    background-position: 0 -48px;
+}
+
+.full-butt5-1200 .att52 {
+    position: absolute;
+    right: 225px;
+    bottom: 62px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt52.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt5-1200 .att52:hover {
+    background-position: 0 -48px;
+}
+
+.full-butt6-1200 {
+    position: relative;
+    width: 1200px;
+    height: 764px;
+    margin: auto;
+}
+
+.full-butt6-1200 .att6 {
+    position: absolute;
+    left: 507px;
+    bottom: 29px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt6.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt6-1200 .att6:hover {
+    background-position: 0 -48px;
+}
+
+.full-butt7-1200 {
+    position: relative;
+    width: 1200px;
+    height: 543px;
+    margin: auto;
+}
+
+.full-butt7-1200 .att7 {
+    position: absolute;
+    right: 123px;
+    bottom: 266px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt7.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt7-1200 .att7:hover {
+    background-position: 0 -48px;
+}
+
+.full-butt8-1200 {
+    position: relative;
+    width: 1200px;
+    height: 716px;
+    margin: auto;
+}
+
+.full-butt8-1200 .att8 {
+    position: absolute;
+    left: 496px;
+    bottom: 53px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt8.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt8-1200 .att8:hover {
+    background-position: 0 -48px;
+}
+
+.full-butt9-1200 {
+    position: relative;
+    width: 1200px;
+    height: 898px;
+    margin: auto;
+}
+
+.full-butt9-1200 .att9 {
+    position: absolute;
+    left: 498px;
+    bottom: 72px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt9.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt9-1200 .att9:hover {
+    background-position: 0 -48px;
+}
+
+.full-butt10-1200 {
+    position: relative;
+    width: 1200px;
+    height: 877px;
+    margin: auto;
+}
+
+.full-butt10-1200 .att10 {
+    position: absolute;
+    left: 496px;
+    bottom: 60px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt10.png);
+    background-repeat: no-repeat;
+}
+
+.full-butt10-1200 .att10:hover {
+    background-position: 0 -48px;
+}
+
+.f_fatab .att11 {
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    bottom: 50px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt11.png);
+    background-repeat: no-repeat;
+}
+
+.f_fatab .att11:hover {
+    background-position: 0 -48px;
+}
+
+.t_li {
+    position: relative;
+}
+
+.t_li .att12 {
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    margin-left: -105px;
+    bottom: 45px;
+    display: block;
+    width: 210px;
+    height: 43px;
+    background-image: url(http://iotekseo.b0.upaiyun.com/sem/img/butt12.png);
+    background-repeat: no-repeat;
+}
+
+.t_li .att12:hover {
+    background-position: 0 -48px;
+}
+
+/* 弹出框 */
+.tanchu1 {
+    /* display: block; */
+    display: none;
+    width: 674px;
+    height: 545px;
+    position: fixed;
+    top: 50%;
+    margin-top: -276px;
+    left: 50%;
+    margin-left: -341px;
+    background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/tankuang.png) no-repeat;
+    z-index: 100000;
+}
+
+.tanchu1 a {
+    position: relative;
+    display: inline-block;
+    width: 218px;
+    height: 70px;
+    z-index: 10000;
+    /* background-color: red; */
+    left: 135px;
+    top: 383px;
+}
+
+.tanchu1 .fi-01 {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    /* background-color: red; */
+    position: relative;
+    left: 295px;
+    top: 427px;
+    cursor: pointer;
+}
+
+.tanchu2 {
+    /* display: block; */
+    display: none;
+    width: 683px;
+    height: 553px;
+    position: fixed;
+    top: 50%;
+    margin-top: -276px;
+    left: 50%;
+    margin-left: -341px;
+    background: url(http://http://iotekcdn.b0.upaiyun.com/sem-static/img/tankuang2.png) no-repeat;
+    z-index: 10000;
+}
+
+.tanchu2 a {
+    position: relative;
+    display: inline-block;
+    width: 218px;
+    height: 70px;
+    z-index: 10000;
+    /* background-color: red; */
+    left: 135px;
+    top: 383px;
+}
+
+.tanchu2 .fi-02 {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    /* background-color: red; */
+    position: relative;
+    left: 295px;
+    top: 427px;
+    cursor: pointer;
+}
+
+#cnzz_stat_icon_1255814405 {
+    display: none;
+}

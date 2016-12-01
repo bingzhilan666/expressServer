@@ -1,0 +1,161 @@
+<!doctype>
+<html>
+<head>
+<meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/11.11.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <!--<script src="../js/jquery.fullPage.min.js"></script>-->
+</head>
+<body style="font-size: 87.5%;">
+<div id="fullpage">
+    <div class="section shishi4">
+        <div class="page1_title1 a-fadeinT"></div>
+        <div class="page1_title2 myroll2"></div>
+        <div class="page1_line1 a-fadeinR"></div>
+        <div class="page1_title3 myscale"></div>
+        <div class="page1_line2 a-fadeinL"></div>
+        <div class="page1_title5 a-fadeinB"></div>
+        <div class="page1_circle myroll"></div>
+        <div class="page1_title6 a-fadeinB"></div>
+    </div>
+    <div class="section shishi3">
+       <div class="page2_title1"></div>
+       <div class="page2_token"></div>
+       <div class="page2_style_btn"></div>
+       <div class="page2_tab1 " id="page2_tab1"></div>
+       <div class="page2_tab2" id="page2_tab2"  style="display: none"></div>
+       <div class="page2_tab1btn"></div>
+       <div class="page2_tab2btn"></div>
+     </div>
+		 <div class="section shishi1">
+			<div class="page1_title1 a-fadeinT"></div>
+			<div class="page3_needu">
+			</div>
+			<div class="page3_input_bg"></div>
+			<div class="page3_course"></div>
+			<div class="page3_input">
+			<input type="text" class="page3_name" name="name" id="name">
+			<input type="number" class="page3_tel1" name="tel" id="tel" required>
+			<input type="number" class="page3_tel2" name="tel2" id="tel2">
+			</div>
+			<div class="page3_radio">
+				<input type="radio" class="page3_android" name="course" value="0">
+				<input type="radio" class="page3_java" name="course" value="1">
+				<input type="radio" class="page3_php" name="course" value="2">
+				<input type="radio" class="page3_ui" name="course" value="3">
+			</div>
+			<div class="page3_radio_checked page3_android_checked" id="c1"></div>
+			<div class="page3_radio_checked page3_java_checked" id="c2"></div>
+			<div class="page3_radio_checked page3_php_checked" id="c3"></div>
+			<div class="page3_radio_checked page3_ui_checked" id="c4"></div>
+			<input type="button" class="page3_btn" id="page3_btn">
+
+		 </div>
+		 <div class="section shishi2" style="position: absolute;bottom: 0;display: none;height: 100%;width: 100%;">
+			<div class="page1_title1 a-fadeinT"></div>
+			<div class="page4_bg"></div>
+		 </div>
+</div>
+<div class="shelter"></div>
+<script>
+    $(document).ready(function() {
+        $(".page2_tab1btn").click(function(){
+            $("#page2_tab2").fadeOut("slow");
+            $("#page2_tab1").fadeIn("slow");
+        });
+        $(".page2_tab2btn").click(function(){
+            $("#page2_tab1").fadeOut("slow");
+            $("#page2_tab2").fadeIn("slow");
+        });
+        $(".page2_title3").click(function(){
+            $(".shelter").show();
+            $.fn.fullpage.setAllowScrolling(false);
+            $.fn.fullpage.setKeyboardScrolling(false);
+        });
+
+$(".page3_radio input").click(function(){
+	if($(this).val()==="0"){
+		$("#c1").removeClass("page3_android_checked");
+		$("#c2").addClass("page3_java_checked");
+		$("#c3").addClass("page3_php_checked");
+		$("#c4").addClass("page3_ui_checked");
+	}else if($(this).val()==="1"){
+		$("#c1").addClass("page3_android_checked");
+		$("#c2").removeClass("page3_java_checked");
+		$("#c3").addClass("page3_php_checked");
+		$("#c4").addClass("page3_ui_checked");
+	}else if($(this).val()==="2"){
+		$("#c1").addClass("page3_android_checked");
+		$("#c2").addClass("page3_java_checked");
+		$("#c3").removeClass("page3_php_checked");
+		$("#c4").addClass("page3_ui_checked");
+	}else if($(this).val()==="3"){
+		$("#c1").addClass("page3_android_checked");
+		$("#c2").addClass("page3_java_checked");
+		$("#c3").addClass("page3_php_checked");
+		$("#c4").removeClass("page3_ui_checked");
+	}
+});
+
+      $("#page3_btn").click(function(){
+				       $.ajax({
+                url: 'http://192.168.8.232:8000/cms/applyuser/save',
+                type: 'GET',
+                dataType: 'jsonp',
+                jsonp: "callback",
+                jsonpCallback: "callback",
+                data: {
+                    'name': $("#name").val(),
+                    'phone': $("#tel").val(),
+                    'userType': 2,
+                    'education': $("#tel2").val(),
+                    'jobCategory': $("input[name=course]:checked").val()
+                },
+                success: function (jsonp) {
+                    var msg = '';
+                    if (jsonp) {
+                        if (jsonp.code === 0) {
+                            alert('您已提交申请，请不要重复提交');
+                        } else if (jsonp.code === 1) {
+                            alert('提交成功');
+                            $('.shishi1').fadeOut(500);
+                            $('.shishi3').fadeOut(500);
+                            $('.shishi4').fadeOut(500);
+                            $('.shishi2').fadeIn()(3000);
+                        } else {
+                            alert('申请信息格式错误');
+
+                        }
+                    }
+
+
+                },
+                error: function () {
+                    alert('请求错误');
+
+                    return false;
+                }
+
+            });
+			})
+
+		//默认选安卓
+		$(".page3_radio input").click();
+
+	});
+
+	$(function () {
+		// 默认选择安卓
+		$("#c1").removeClass("page3_android_checked");
+		$("#c2").addClass("page3_java_checked");
+		$("#c3").addClass("page3_php_checked");
+		$("#c4").addClass("page3_ui_checked");
+	})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+.f_1200{
+	min-width: 1200px;
+}
+#cnzz_stat_icon_1255814405{
+    display: none;
+}
+.gtys{
+	position: relative;
+	text-align: center;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.gtys a{
+	display: inline-block;
+	width: 280px;
+	height: 48px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/Android2480/anbgaz2480.png) no-repeat;
+	color: #fff;font-size: 18px;text-align: center;line-height: 48px;
+	position: absolute;
+	left: 50%;
+	margin-left: -140px;
+}
+.gtys .ad_top{
+	width: 237px;
+	height: 53px;
+	line-height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/Android2480/anbgaz2480_2.png) no-repeat;
+	left: 50%;
+	margin-left: -119px;
+}
+.gtys .ad_bot{
+	width: 343px;
+	height: 76px;
+	line-height: 76px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/Android2480/anbgaz2480_1.png) no-repeat;
+	left: 50%;
+	margin-left: -171px;
+	font-size: 36px;
+}
+.gtys a:hover{
+	text-decoration: none;
+}
+.gtys h1{
+	color: #1e1e1e;
+	font-size: 40px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.gtys p{
+	color: #646464;
+	font-size: 24px;
+}
+
+.f_01{
+	height: 730px;
+}
+.f_01 a{
+	bottom: 82px;
+}
+
+
+
+
+.f_02{
+	height: 947px;
+}
+.f_02 a{
+	bottom: 74px;
+}
+.f2_xnr span{
+	font-size: 30px;
+	display: inline-block;
+	padding-bottom: 8px;
+
+
+}
+.f2_xnr{
+	width: 280px;
+	text-align: left;
+	position: absolute;
+}
+.f2_xnr p{
+	font-size: 18px;
+	color: #343434;
+	text-align: left;
+	line-height: 28px;
+}
+.f2_xnr .ys_blue{
+	color: #005fc1;
+}
+.f2_xnr .ys_red{
+	color: #f34422;
+}
+.f2_xnr .ys_lv1{
+	color: #64a81f;
+}
+.f2_xnr .ys_yellow{
+	color: #ff9600;
+}
+.f2_xnr .ys_lv2{
+	color: #01b66b;
+}
+.f2_01{
+	left: 118px;
+    top: 221px;
+}
+.f2_02{
+	left: 877px;
+    top: 221px;
+}
+.f2_03{
+	left: 118px;
+    top: 552px;
+}
+.f2_04{
+    left: 464px;
+    top: 693px;
+}
+.f2_04{
+	text-align: center;
+}
+.f2_05{
+	left: 877px;
+    top: 552px;
+}
+
+
+
+
+
+
+
+
+
+.f_03{
+	height: 960px;
+}
+.f_03 a{
+	bottom: 63px;
+}
+.f_03 h1{
+	color: #fff;
+}
+.f_03 p{
+	color: #b5b5b5;
+}
+
+
+
+
+.f_04{
+	height: 1250px;
+}
+.f_04 a{
+	bottom: 75px;
+}
+.f4_xnr span{
+	color: #fff;
+	font-size: 24px;
+}
+.f4_xnr p{
+	font-size: 16px;
+	color: #464646;
+	margin-top: 35px;
+}
+.f4_xnr{
+	width: 420px;
+	text-align: left;
+	position: absolute;
+}
+.f4_01{
+	position: absolute;
+    left: 90px;
+    top: 446px;
+}
+.f4_02{
+	position: absolute;
+    left: 90px;
+    top: 685px;
+}
+.f4_03{
+	position: absolute;
+    left: 90px;
+    top: 924px;
+}
+.f4_04{
+	position: absolute;
+    left: 700px;
+    top: 325px;
+}
+.f4_05{
+	position: absolute;
+    left: 700px;
+    top: 564px;
+}
+.f4_06{
+	position: absolute;
+    left: 700px;
+    top: 803px;
+}
+
+
+
+
+
+
+
+.f_05{
+	height: 764px;
+}
+.f_05 a{
+	bottom: 50px;
+}
+.f_05 h1{
+	color: #fff;
+}
+.f_05 p{
+	color: #b5b5b5;
+}
+
+
+
+.f_06{
+	height: 996px;
+}
+.f_06 a{
+	bottom: 106px;
+}
+
+
+
+
+.f_07{
+	height: 1205px;
+}
+.f_07 a{
+	bottom: 72px;
+}
+.f_07 h1{
+	color: #fff;
+}
+.f_07 p{
+	color: #b5b5b5;
+}
+
+
+.f_08{
+	height: 920px;
+}
+.f_08 a{
+	bottom: 110px;
+}
+
+
+
+
+
+.f_09{
+	height: 868px;
+}
+.f_09 a{
+	bottom: 90px;
+}
+.f_09 h1{
+	color: #fff;
+}
+.f_09 p{
+	color: #b5b5b5;
+}
+
+
+
+
+.f_010{
+	height: 1100px;
+}
+.f_010 a{
+	bottom: 68px;
+}
+
+
+
+
+
+
+.f_011{
+	height: 820px;
+}
+.f_011 a{
+	bottom: 88px;
+}
+.f_011 h1{
+	color: #fff;
+}
+.f_011 p{
+	color: #b5b5b5;
+}
+.f11_xnr{
+	position: absolute;
+	width: 220px;
+}
+.f11_xnr p{
+	font-size: 14px;
+	color: #fff;
+	display: inline-block;
+	text-align: left;
+	line-height: 28px;
+}
+.f11_01{
+	left: 10px;
+	top: 440px;
+}
+.f11_02{
+	left: 328px;
+	top: 440px;
+}
+.f11_03{
+	left: 653px;
+	top: 440px;
+}
+.f11_04{
+	left: 970px;
+	top: 440px;
+}
+
+
+
+
+.f_012{
+	height: 1150px;
+}
+.f_012 a{
+	bottom: 60px;
+}
+.f12_xnr{
+	text-align: left;
+	position: absolute;
+}
+.f12_xnr span{
+	font-size: 24px;
+	color: #005fc1;
+}
+.f12_xnr p{
+	font-size: 16px;
+	color: #3e3e3e;
+	line-height: 22px;
+	margin-top: 16px;
+}
+.f12_01{
+	left: 70px;
+    top: 306px;
+}
+.f12_02{
+	left: 70px;
+    top: 710px;
+}
+.f12_03{
+	left: 690px;
+    top: 306px;
+}
+.f12_04{
+	left: 690px;
+    top: 710px;
+}
+
+
+.f_013{
+	height: 870px;
+}
+.f_013 a{
+	bottom: 90px;
+}
+.f_013 h1{
+	color: #fff;
+}
+.f_013 p{
+	color: #b5b5b5;
+}
+
+
+
+.f_014{
+	height: 770px;
+}
+.f_014 a{
+	bottom: 220px;
+}

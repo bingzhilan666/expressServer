@@ -1,0 +1,527 @@
+.form_div{margin:0 auto;margin-top:-373px;width:452px;text-align:center;}
+.input_text{width:435px;height:50px;line-height:50px;margin-bottom:27px;border-radius:8px;color:#b4b4b4;font-size:18px;padding-left:15px;}
+.form_btn{}
+.info{font-size:18px;color:#32c09a;line-height:70px;}
+.form_btn {
+    width: 227px;
+    height: 58px;
+    
+    background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/images/form_btn.png') 0 0 no-repeat;
+
+
+}
+.targer_div {
+    display: none;
+    text-align: center;
+    background: url('http://iotekseo.b0.upaiyun.com/sem/img/targer_bg.png') 0 0 no-repeat;
+    width: 378px;
+    height: 413px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -189px;
+    margin-top: -206px;
+    z-index: 1002222;
+}
+
+.cancle_img {
+    float: right;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.true_img {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.text_true {
+    font-size: 20px;
+    color: #444;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#true_btn {
+    cursor: pointer;
+}
+/*侧滑*/
+.ch_div{
+	position: absolute;left:5px;top:30%;
+
+	margin-top:0px;width:151px;height:535px;
+	background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/images/ch_bg.png') 0 0 no-repeat;z-index: 100;}
+.ch_div a{display: block;margin-left:7px;margin-bottom:5px;}
+.ch_div a:hover{
+	box-shadow: 0 0 20px #333;
+	transition: all 0.5s;width:137px;}
+
+/*侧滑 手机*/
+.phone_div{display:none;background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/images/phone_div.png') 0 0 no-repeat;
+width:267px;height:52px;
+position:relative;left:151px;top:-60px;
+
+}
+.phone_text{float:left;background:#fff;width:165px;height:40px;line-height:40px;color:#969696;margin-left:15px;margin-top:6px;padding-left:10px;}
+.mfhd{background: #12dba5;text-align:center;line-height:40px;color:#333;font-size:14;float:left;width:70px;margin-top:6px;cursor: pointer;}
+
+.tishi {
+    color: #dd001f;
+    font-size: 20px;
+    position: relative;
+    top:-65px;
+    right:-140px;
+    display: none;
+}
+
+.tishi2 {
+    color: #dd001f;
+    font-size: 20px;
+    position: relative;
+    top:-65px;
+    right:-120px;
+    display: none;}
+
+.f-1{
+	width: 1200px;
+	height: 72px;
+	margin: 0 auto;
+}
+.ld-rt{
+	float: right;
+	width: 220px;
+	height: 28px;
+	margin-top: 23px;
+}
+.ld-rt a{
+	display: inline-block;
+	width: 99px;
+	height: 28px;
+}
+div a{
+	display: inline-block;
+}
+.ld-rt .ld-rt-btn1{
+	float: left;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landingtop1.png) no-repeat;
+}
+.ld-rt .ld-rt-btn1:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landingtop1-1.png) no-repeat;
+}
+.ld-rt .ld-rt-btn2{
+	float: right;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landingtop2.png) no-repeat;
+}
+.ld-rt .ld-rt-btn2:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landingtop2-2.png) no-repeat;
+}
+
+.ff-2{
+	position: relative;
+	width: 1200px;
+	height: 596px;
+	margin: 0 auto;
+}
+.ff-2 a{
+	position: absolute;
+	left: 10px;
+	bottom: 128px;
+	width: 237px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing-2-1.png) no-repeat;
+}
+.ff-2 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing2-2.png) no-repeat;
+}
+
+.ff-3{
+	position: relative;
+	width: 1200px;
+	height: 1250px;
+	margin: 0 auto;
+}
+.ff-3 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -116px;
+	bottom: 58px;
+	width: 237px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing3-1.png) no-repeat;
+}
+.ff-3 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing3-2.png) no-repeat;
+}
+
+.ff-4{
+	position: relative;
+	width: 1200px;
+	height: 934px;
+	margin: 0 auto;
+}
+.ff-4 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	bottom: 43px;
+	width: 199px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing4-1.png) no-repeat;
+}
+.ff-4 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing4-2.png) no-repeat;
+}
+
+.ff-5{
+	position: relative;
+	width: 1200px;
+	height: 733px;
+	margin: 0 auto;
+}
+.ff-5 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -105px;
+	bottom: 88px;
+	width: 209px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing5-1.png) no-repeat;
+}
+.ff-5 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing5-2.png) no-repeat;
+}
+
+.ff-6{
+	position: relative;
+	width: 1200px;
+	height: 909px;
+	margin: 0 auto;
+}
+.ff-6 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -105px;
+	bottom: 40px;
+	width: 209px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing6-1.png) no-repeat;
+}
+.ff-6 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing6-2.png) no-repeat;
+}
+
+.ff-7{
+	position: relative;
+	width: 1200px;
+	height: 769px;
+	margin: 0 auto;
+}
+.ff-7 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -105px;
+	bottom: 55px;
+	width: 209px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing6-1.png) no-repeat;
+}
+.ff-7 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing6-2.png) no-repeat;
+}
+
+.ff-8{
+	position: relative;
+	width: 1200px;
+	height: 803px;
+	margin: 0 auto;
+}
+.ff-8 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -105px;
+	bottom: 46px;
+	width: 209px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing8-1.png) no-repeat;
+}
+.ff-8 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing8-2.png) no-repeat;
+}
+
+.ff-9{
+	position: relative;
+	width: 1200px;
+	height: 1033px;
+	margin: 0 auto;
+}
+.ff-9 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -134px;
+	bottom: 50px;
+	width: 267px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing9-1.png) no-repeat;
+}
+.ff-9 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing9-2.png) no-repeat;
+}
+
+.ff-10{
+	position: relative;
+	width: 1200px;
+	height: 911px;
+	margin: 0 auto;
+}
+.ff-10 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -110px;
+	bottom: 48px;
+	width: 221px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing10-1.png) no-repeat;
+}
+.ff-10 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing10-2.png) no-repeat;
+}
+
+.ff-11{
+	position: relative;
+	width: 1200px;
+	height: 772px;
+	margin: 0 auto;
+}
+.ff-11 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -110px;
+	bottom: 48px;
+	width: 221px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing11-1.png) no-repeat;
+}
+.ff-11 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing11-2.png) no-repeat;
+}
+.ff-11 ul{
+	padding-top: 245px;
+}
+.ff-11 ul li{
+	display: inline-block;
+	width: 258px;
+	height: 367px;
+	float: left;
+	margin-right: 56px;
+}
+.ff-11 ul .f-hover1{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/talk-1.png) no-repeat;
+}
+.ff-11 ul .f-hover1:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/talk-1-1.png) no-repeat;
+}
+.ff-11 ul .f-hover2{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/talk-2.png) no-repeat;
+}
+.ff-11 ul .f-hover2:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/talk-2-2.png) no-repeat;
+}
+.ff-11 ul .f-hover3{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/talk-3.png) no-repeat;
+}
+.ff-11 ul .f-hover3:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/talk-3-3.png) no-repeat;
+}
+.ff-11 ul .f-hover4{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/talk-4.png) no-repeat;
+	margin-right: 0;
+}
+.ff-11 ul .f-hover4:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/talk-4-4.png) no-repeat;
+}
+
+.ff-12{
+	position: relative;
+	width: 1200px;
+	height: 150px;
+	margin: 0 auto;
+	top: 535px;
+}
+.ff-12 a{
+	position: absolute;
+	right: 250px;
+	bottom: 90px;
+	width: 221px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing12-1.png) no-repeat;
+}
+.ff-12 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing12-2.png) no-repeat;
+}
+
+.ff-13{
+	position: relative;
+	width: 1200px;
+	height: 690px;
+	margin: 0 auto;
+	padding-top: 250px;
+}
+.ff-13 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -110px;
+	bottom: 76px;
+	width: 221px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing13-1.png) no-repeat;
+}
+.ff-13 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing13-2.png) no-repeat;
+}
+
+.ff-14{
+	position: relative;
+	width: 1200px;
+	height: 980px;
+	margin: 0 auto;
+}
+.ff-14 a{
+	position: absolute;
+	left: 50%;
+	margin-left: -110px;
+	bottom: 78px;
+	width: 221px;
+	height: 53px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing14-1.png) no-repeat;
+}
+.ff-14 a:hover{
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/images/landing14-2.png) no-repeat;
+}
+
+/* 弹出框 */
+.tanchu{
+	/* display: block; */
+	z-index: 100000;
+	display: none;
+	width: 727px;
+	height: 469px;
+	position: fixed;
+	top: 50%;
+	margin-top: -238px;
+	left: 50%;
+	margin-left: -363px;
+	background: url(http://iotekcdn.b0.upaiyun.com/sem-static/img/landing-tk.png) no-repeat;
+}
+.tanchu a{
+	position: absolute;
+	display: inline-block;
+	width: 180px;
+	height: 40px;
+}
+.tanchu .fi-01{
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	top: 0px;
+	right: 5px;
+}
+.tanchu .fi-02{
+	bottom: 51px;
+	left: 272px;
+	/* background-color: pink; */
+}
+.tanchu p{
+	color: #fff;
+	font-size: 25px;
+	display: inline-block;
+	width: 727px;
+	position: absolute;
+	top: 310px;
+	/* left: 50%; */
+	/* margin-left: -108px; */
+	text-align: center;
+
+}
+.tanchu p span{
+	color: #ffd200;
+}
+
+
+.t_li {
+    padding-top: 255px;
+    height: 462px;
+}
+
+.t_hz {
+    width: 1232px;
+    margin: 0 auto;
+}
+
+.t_first li {
+    float: left;
+    width: 176px;
+    height: 115px;
+    padding-top: 83px;
+    background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/images/six.png') 0 0 no-repeat;
+    text-align: center;
+   /*  margin: 1px; */
+
+}
+
+.t_first li:hover {
+    background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/images/six01.png') 0 0 no-repeat;
+}
+
+.t_first .b_g:hover {
+    background: transparent;
+}
+
+.t_two {
+    position: relative;
+    top: -46px;
+    left: 88px;
+
+}
+
+.t_three {
+    position: relative;
+    top: -92px;
+    left: 0;
+
+}
+
+.t_first .b_g {
+    background: transparent;
+}
+.t_small{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.t_bd{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+.t_small li{
+	position: absolute;
+	top: 300px;
+}
+.t_ol{
+	position: absolute;
+	top: 334px;
+	right: 20px;
+}
+.t_ol li{
+	width: 140px;
+    height: 50px;
+    margin-right: 15px;
+	float: left;
+	cursor: pointer;
+}
+#cnzz_stat_icon_1255814405{
+	display: none;
+}

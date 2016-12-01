@@ -1,0 +1,221 @@
+.content{
+    min-width: 1200px;
+}
+.fl-1200{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.mian-tit{
+    text-align: center;
+    height: 82px;
+}
+.mian-tit span{
+    font-size: 60px;
+    color: #000;
+    /*text-decoration:underline;*/
+    display: block;
+    height: 82px;
+    padding-top: 50px;
+    background: url(../img/bonding/leng.png) no-repeat 240px 78px;
+}
+.fl-1200 .mian-tit span .my-line{
+    display: inline-block;
+    padding-top: 0px;
+    border-bottom: solid 3px #000;
+    background: none;
+    height: 82px;
+}
+.fl-1200 .mian-tit-01 span .myline-last{
+    border-bottom: solid 3px #fff;
+    background: none;
+    display: inline-block;
+    padding-top: 0;
+    height: 82px;
+}
+.mian-tit span strong{
+    display: inline-block;
+    color: #b0944f;
+    height: 82px;
+    /*text-decoration:underline;*/
+    border-bottom: solid 3px #b0944f;
+}
+.mian-tit p{
+    font-size: 36px;
+    color: #000;
+    line-height: 50px;
+}
+.bonding-03 .mian-tit-01 span{
+    padding-top: 98px;
+    background: url(../img/bonding/leng-fff.png) no-repeat 240px 126px;
+}
+.bonding-02 .mian-tit span{
+    padding-top: 78px;
+    background: url(../img/bonding/leng.png) no-repeat 210px 104px;
+}
+.bonding-04 .mian-tit span{
+    background: url(../img/bonding/leng.png) no-repeat 300px 78px;
+}
+.bonding-06 .mian-tit span{
+    background: url(../img/bonding/leng.png) no-repeat 68px 78px;
+}
+.bonding-05 .mian-tit-01 span{
+    padding-top: 98px;
+    background: url(../img/bonding/leng-fff.png) no-repeat 165px 126px;
+}
+
+.bonding-07 .mian-tit-01 span{
+    padding-top: 98px;
+    background: url(../img/bonding/leng-fff.png) no-repeat 0px 126px;
+}
+.mian-tit-01 span{
+    color: #fff;
+    background: url(../img/bonding/leng-fff.png) no-repeat 240px 78px;
+}
+.mian-tit-01 p{
+    font-weight: bold;
+    color: #b0944f;
+}
+.bonding-01{
+    height: 848px;
+}
+.fixed-left{
+    position: absolute;
+    left: 5px;
+    top:30%;
+}
+.bonding-00{
+    height: 751px;
+}
+.fl-1200 a{
+    position: absolute;
+    display: inline-block;
+    border-radius: 8px;
+    width: 360px;
+    height: 86px;
+    text-align: center;
+    line-height: 86px;
+    left: 50%;
+    margin-left: -180px;
+    font-size: 40px;
+}
+.bonding-00 a{
+    color: #fff;
+    background-color: #000;
+    bottom: 76px;
+}
+.bonding-01 a{
+    color: #fff;
+    background-color: #000;
+    bottom: 66px;
+}
+.bonding-02{
+    height: 778px;
+}
+.bonding-02 a{
+    color: #fff;
+    background-color: #000;
+    bottom: 66px;
+}
+.bonding-03{
+    height: 1056px;
+}
+.bonding-03 a{
+    width: 183px;
+    height: 57px;
+    margin-left: -91px;
+    bottom: 194px;
+}
+.bonding-04{
+    height: 4402px;
+}
+.bonding-04 a{
+    color: #fff;
+    background-color: #000;
+    bottom: 66px;
+}
+.bonding-05{
+    height: 920px;
+}
+.bonding-05 a{
+    color: #000;
+    background-color: #fff;
+    bottom: 66px;
+}
+.bonding-06{
+    height: 1448px;
+}
+.bonding-06 a{
+    color: #fff;
+    background-color: #000;
+    bottom: 66px;
+}
+.bonding-07{
+    height: 991px;
+}
+.bonding-07 a{
+    color: #000;
+    background-color: #fff;
+    bottom: 66px;
+}
+.bonding-08{
+    height: 689px;
+}
+.bonding-08 p{
+    font-size: 60px;
+    font-weight: bold;
+    color: #b0944f;
+    text-align: center;
+    line-height: 80px;
+    padding-top: 30px;
+}
+.my-btn{
+    width: 517px;
+    height: 172px;
+    background: url(../img/bonding/bonding-10.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -259px;
+}
+.my-btn button{
+    position: absolute;
+    display: inline-block;
+    border-radius: 8px;
+    width: 360px;
+    height: 86px;
+    text-align: center;
+    line-height: 86px;
+    left: 50%;
+    margin-left: -180px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #000;
+    bottom: 50px;
+}
+.my-ppap{
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    width: 778px;
+    margin: 30px 150px 0 155px;
+    position: relative;
+}
+.my-ppap input{
+    width: 660px;
+    height: 100px;
+    border: solid 3px #000;
+    border-radius: 6px;
+    font-size: 40px;
+    margin-left: 10px;
+    text-indent: 1em;
+}
+.my-ppap input:focus { outline: none; }
+.my-ppap span{
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    top:27px;
+    right: 10px;
+    display: none;
+}

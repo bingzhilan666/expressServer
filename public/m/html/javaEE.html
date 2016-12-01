@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>职坐标-0基础学JavaEE JavaEE开发培训</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<style type="text/css">
+		/* 本例子css -------------------------------------- */
+	.slideBox{ position:relative; overflow:hidden;  max-width:720px;/* 设置焦点图最大宽度 */ }
+	.slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:1rem; left:50%; margin-left:-1rem; z-index:1; }
+	.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#79797e; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+	.slideBox .hd li.on{ background:#e23b2f;  }
+	.slideBox .bd{ position:relative; z-index:0; }
+	.slideBox .bd li{ position:relative; text-align:center;  }
+	.slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+	.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+	.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;  text-align:left;  }
+	</style>
+	<link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/m/java1.css">
+	<script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/common/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/sem-static/js/m/check.js"></script>
+	<script src="http://iotekcdn.b0.upaiyun.com/sem-static/js/m/TouchSlide.1.1.js"></script>
+	<script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/sem-static/js/m/java.js"></script>
+
+</head>
+
+<script>
+          var oHtml = document.documentElement;
+          getFont();
+          window.onresize = function(){
+          	getFont();
+          }
+          function getFont(){
+          	var screenWidth = oHtml.clientWidth;
+              if(screenWidth <= 320){
+                 oHtml.style.fontSize = '17.778px';
+              }else if(screenWidth >= 640){
+                  oHtml.style.fontSize = '35.556px';
+              }else{
+                  oHtml.style.fontSize = screenWidth/(720/40)+'px';
+              }  	
+          }
+</script>
+<body>
+	<!-- 头部开始 -->
+	<div class="jt_top">
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/javat_logo.png">
+	</div>
+	<!-- 头部结束 -->
+	<div class="dananner_01">
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/javat_01.png">
+	</div>
+	<div class="dananner_02">
+		<div>
+			<h2>就业前景</h2>
+			<p>用数据告诉你，锦绣前程大有可为</p>
+		</div>
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/javat_02.png">
+	</div>
+	<div class="dananner_03">
+		<div>
+			<h2>职坐标签订“包就业协议”</h2>
+			<p>入学即签订“包就业协议”，保证学成高薪就业</p>
+			<p>相比没有任何保障的培训机构，</p>
+			<p class="weiyi">职坐标坚持以就业为导向</p>
+		</div>
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/javat_03.png">
+	</div>
+	<div class="dananner_04">
+		<div>
+			<h2>课程大纲</h2>
+			<p>精炼大纲，铸造高端JavaEE开发工程师</p>
+		</div>
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/javat_04.png">
+	</div>
+
+
+
+
+
+<!-- 本例主要代码 Start ================================ -->
+			<div id="slideBox" class="slideBox">
+
+				<div class="bd">
+					<ul>
+							<li>
+								<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/j_banner01.png"/>
+							</li>
+							<li>
+								<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/j_banner02.png"/>
+							</li>
+							<li>
+								<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/j_banner03.png"/>
+							</li>
+					</ul>
+				</div>
+
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#slideBox",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true,//自动分页
+					autoPlay:true //自动播放
+				});
+			</script>
+			<!-- 本例主要代码 End ================================ -->
+
+
+
+
+
+
+
+	<div class="dananner_05">
+		<div>
+			<h2>2000+合作企业</h2>
+			<p>与企业签订《人才订单输送协议》，轻松入名企拿高薪</p>
+		</div>
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/javat_h.png">
+	</div>
+	<div class="dananner_06">
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/javat_xinxi.png">
+	</div>
+	<div class="dananner_07">
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/javat_jiaru.png">
+		<h2>即刻开启我的学习之旅</h2>
+		<a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"><img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/lijiajiaru.png"></a>
+		<p><img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/banquan.png"></p>
+	</div>
+	<div class="dananner_08 clearfix">
+		<a target="_blank" class="shixue" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"><img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/xia_left.png"></a>
+		<a target="_blank" class="zaixian" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"><img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/xia_right.png"></a>
+	</div>
+
+
+
+
+	<!-- 悬浮框 -->
+
+	<div class="xuanfu">
+		<a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"><img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/xuanfu.png"></a>
+	</div>
+
+
+	<!-- 弹出框 -->
+	
+	<div class="heipin">
+		
+	</div>
+	<div class="tanchu">
+		<img src="http://iotekseo.b0.upaiyun.com/sem/m_images/javaEE/tanchu.png">
+		<div class="loss"></div>
+		<a target="_blank" href="http://pbt.zoosnet.net/LR/Chatpre.aspx?id=PBT96160226&lng=cn"></a>
+	</div>
+
+
+
+	<!-- 百度统计 -->
+      <script>
+      var _hmt = _hmt || [];
+      (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?b8461335c30f7379a1bd366c46bead50";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
+    <!-- GA -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65740966-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- cnzz -->
+    <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
+          : " http://");
+      document
+          .write(unescape("%3Cspan id='cnzz_stat_icon_1255814405'%3E%3C/span%3E%3Cscript src='"
+              + cnzz_protocol
+              + "s95.cnzz.com/z_stat.php%3Fid%3D1255814405' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	<!--请将以下码嵌入到您网页源代码的最后面，通常是</body></HTML>之后,这样在服务器升级维护的时候也不会影响您的网页打开呈现速度。-->
+	<script language="javascript" src="http://pbt.zoosnet.net/JS/LsJS.aspx?siteid=PBT96160226&float=1&lng=cn"></script>
+</body>
+</html>

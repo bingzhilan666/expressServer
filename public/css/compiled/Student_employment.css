@@ -1,0 +1,140 @@
+.content {
+  width: 100%;
+  min-width: 1200px;
+}
+.content .f_1200 {
+  min-width: 1200px;
+  text-align: center;
+}
+.content .f_1200 h1 {
+  font-weight: normal;
+  color: #cd0303;
+  font-size: 52px;
+  line-height: 75px;
+  width: 1100px;
+  border-bottom: solid 1px #a0a0a0;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.content .f_1200 .my_cd {
+  width: 1000px;
+  height: 518px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+.content .f_1200 .my_cd img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.content .f_1200 .my_cd .video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.content .f_1200 .material {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+.content .f_1200 .material .f2 {
+  display: inline-block;
+  float: left;
+  margin-right: 39px;
+}
+.content .f_1200 .material .f2 span {
+  font-size: 26px;
+  color: #212121;
+  line-height: 75px;
+}
+.content .f_1200 .material .f2 p {
+  font-size: 20px;
+  color: #444;
+  text-align: left;
+  line-height: 41px;
+  padding-left: 22px;
+}
+.content .f_1200 .material .no_rt {
+  margin-right: 0;
+}
+.content .f_1200 .f4 {
+  width: 1200px;
+  height: 817px;
+  margin: 0 auto;
+}
+.content .f_1200 .f4 .rolling {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+}
+.content .f_1200 .f4 .rolling .xy_title {
+  width: 1000px;
+  height: 52px;
+}
+.content .f_1200 .f4 .rolling .gundong {
+  width: 1000px;
+  height: 448px;
+  overflow: hidden;
+  position: relative;
+}
+.content .f_1200 .f4 .rolling .gundong #andyscroll {
+  width: 1000px;
+  height: 448px;
+  overflow: hidden;
+}
+.content .f_1200 .f4 .rolling .gundong #andyscroll #scrollmessage {
+  height: 902px;
+  width: 1000px;
+}
+.content .f_1200 .f4 .rolling .gundong .renyuan {
+  width: 1000px;
+  height: 600px;
+  background-color: pink;
+}
+.content .dw_01 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: 1000px;
+}
+.content .dw_01 span {
+  position: absolute;
+  font-size: 48px;
+  color: #1f1f1f;
+}
+.content .dw_01 p {
+  position: absolute;
+  font-size: 28px;
+  color: #fff;
+  line-height: 83px;
+}
+.content .dw_01 .f3_01 {
+  left: 250px;
+  top: 192px;
+}
+.content .dw_01 .f3_02 {
+  left: 845px;
+  top: 192px;
+}
+.content .dw_01 .f3_03 {
+  left: 96px;
+  top: 314px;
+}
+.content .dw_01 .f3_04 {
+  left: 683px;
+  top: 314px;
+}
+.content .f5 {
+  position: relative;
+}
+.content .f5 .xinlai {
+  font-size: 30px;
+  color: #dddddd;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -164px;
+  top: 140px;
+}

@@ -1,0 +1,258 @@
+
+.f_1200{
+	min-width: 1200px;
+}
+.t_tab ul li {
+    width: 830px;
+    height: 492px;
+    z-index: 10;
+    position: absolute;
+    top: 174px;
+    left: 50%;
+    margin-left: -415px;
+
+}
+.t_tab{
+    position: relative;
+    width: 830px;
+    height: 492px;
+    margin: 0 auto;
+}
+.t_tab a{
+    position: absolute;
+}
+.f_07_1{
+    display: inline-block;
+    width: 190px;
+    height: 48px;
+    left: 320px;
+    bottom:-227px;
+    /* background-color: pink; */
+}
+.t_tab ol {
+    height: 100px;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: -240px;
+    z-index: 11;
+    overflow: hidden;
+    zoom: 1;
+
+
+}
+
+.t_tab ol li {
+    width: 120px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+}
+.tab{
+	position: relative;
+}
+
+
+.f_01{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+}
+.f_01 a{
+    position: absolute;
+}
+.f_01 .f_01_1{
+    width: 320px;
+    height: 70px;
+    left: -60px;
+    top: 0;
+}
+.f_01 .f_01_2{
+    width: 100px;
+    height: 30px;
+    right: 142px;
+    top:24px;
+}
+.f_01 .f_01_3{
+    width: 100px;
+    height: 30px;
+    right: 24px;
+    top:24px;
+}
+
+.f_02{
+    width: 1200px;
+    height: 674px;
+    margin: 0 auto;
+    position: relative;
+}
+.f_02 a{
+    position: absolute;
+}
+.f_02 .f_02_1{
+    width: 140px;
+    height: 46px;
+    left: 383px;
+    bottom:60px;
+    /* background-color: pink; */
+}
+.f_02 .f_02_2{
+    width: 140px;
+    height: 46px;
+    right: 378px;
+    bottom:60px;
+    /* background-color: pink; */
+}
+
+
+.f_03{
+    width: 1200px;
+    height: 964px;
+    margin: 0 auto;
+    position: relative;
+}
+.f_03 a{
+    position: absolute;
+}
+.f_03 .f_03_1{
+    width: 264px;
+    height: 48px;
+    left: 466px;
+    bottom:41px;
+    /* background-color: pink; */
+}
+
+.f_04{
+    width: 1200px;
+    height: 692px;
+    margin: 0 auto;
+    position: relative;
+}
+.f_04 a{
+    position: absolute;
+}
+.f_04 .f_04_1{
+    width: 210px;
+    height: 43px;
+    left: 251px;
+    bottom:112px;
+    /* background-color: pink; */
+}
+.f_04 .f_04_2{
+    width: 210px;
+    height: 43px;
+    right: 253px;
+    bottom:112px;
+    /* background-color: pink; */
+}
+
+.f_05{
+    width: 1200px;
+    height: 853px;
+    margin: 0 auto;
+    position: relative;
+}
+.f_05 a{
+    position: absolute;
+}
+.f_05 .f_05_1{
+    width: 190px;
+    height: 48px;
+    left: 504px;
+    bottom:90px;
+    /* background-color: pink; */
+}
+
+.f_06{
+    width: 1200px;
+    height: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+.f_06 a{
+    position: absolute;
+}
+.f_06 .f_06_1{
+    width: 190px;
+    height: 48px;
+    left: 504px;
+    bottom:45px;
+    /* background-color: pink; */
+}
+#cnzz_stat_icon_1255814405{
+    display: none;
+}
+
+
+.form_div{margin:0 auto;margin-top:-275px;width:638px;text-align:center;}
+.input_text{width:638px;height:59px;line-height:50px;margin-bottom:27px;border-radius:8px;color:#b4b4b4;font-size:18px;padding-left:15px;}
+.form_btn{}
+.info{font-size:18px;color:#32c09a;line-height:70px;}
+.form_btn {
+    width: 266px;
+    height: 52px;
+    
+    background: url('http://iotekcdn.b0.upaiyun.com/sem/img/az2/last_az.png') 0 0 no-repeat;
+
+
+}
+.targer_div {
+    display: none;
+    text-align: center;
+    background: url('http://iotekseo.b0.upaiyun.com/sem/img/targer_bg.png') 0 0 no-repeat;
+    width: 378px;
+    height: 413px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -189px;
+    margin-top: -206px;
+    z-index: 1002222;
+}
+
+.cancle_img {
+    float: right;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.true_img {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.text_true {
+    font-size: 20px;
+    color: #444;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#true_btn {
+    cursor: pointer;
+}
+
+.tishi {
+        color: #dd001f;
+    /* margin-left: -137px; */
+    font-size: 20px;
+    display: none;
+    z-index: 100;
+    position: relative;
+    right: -260px;
+    top: -70px;
+}
+
+.tishi2 {
+        color: #dd001f;
+    /* margin-left: -137px; */
+    font-size: 20px;
+    display: none;
+    z-index: 100;
+    position: relative;
+        right: -234px;
+    top: -70px;
+}

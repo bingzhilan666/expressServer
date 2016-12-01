@@ -1,0 +1,328 @@
+.myContainer{
+    min-width: 1200px;
+}
+.reg_logo{
+    position: absolute;
+    left: 2%;
+    top: 23%;
+    width: 372px;
+    height: 51px;
+    background: url("../img/register/logo_register.png") no-repeat center transparent;
+}
+.reg_logo_title{
+    color: #fff;
+    font-size: 20px;
+}
+.reg_logo_title:before{
+    content: url(../img/register/logo.png);
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    padding-right: 13px;
+}
+.java_reg_header{
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 729px;
+    background: url("../img/register/java_top.png") no-repeat top center #fff;
+}
+.reg_form1{
+    position: absolute;
+    width: 1096px;
+    min-height: 106px;
+    left:50%;
+    margin-left:-548px;
+}
+.java_form1{
+    bottom: -34px;
+    background: url("../img/register/java_register_top.png") no-repeat center ;
+}
+.reg_form1 input{
+    position: absolute;
+    top: 37px;
+    height: 35px;
+    font-size: 18px;
+    color: #ecc673;
+    text-indent: 5px;
+}
+.java_form1 p{
+   font-size: 18px;
+    color: red;
+    position: absolute;
+}
+.android_form1 p{
+    font-size: 18px;
+    color: red;
+    position: absolute;
+}
+.android_form1 .tips-01{
+    left: 455px;
+    top: 42px;
+    pointer-events: none;
+    display: none;
+}
+.java_form1 .tips-01{
+    left: 455px;
+    top: 42px;
+    pointer-events: none;
+    display: none;
+}
+.java_form1 .tips-02{
+    right: 228px;
+    top: 42px;
+    pointer-events: none;
+    display: none;
+}
+.android_form1 .tips-02{
+    right: 228px;
+    top: 42px;
+    pointer-events: none;
+    display: none;
+}
+.reg_form1 .reg_form_name{
+    left: 369px;
+    width: 200px;
+}
+.reg_form1 .reg_form_tel{
+    right:223px;
+    width:181px;
+}
+.reg_form1 .reg_btn{
+    position: absolute;
+    width:117px;
+    height:38px;
+    top: 36px;
+    right:66px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 6px;
+}
+.reg_content1{
+    width: 100%;
+    min-height: 1007px;
+    background: url("../img/register/java_hot.png") no-repeat center #fff;
+}
+.reg_content2{
+    width: 100%;
+    min-height: 587px;
+    background: url("../img/register/java_joinus.png") no-repeat center #fff;
+}
+.reg_content3{
+    position: relative;
+    width: 100%;
+    min-height: 742px;
+    background: url("../img/register/java_classes.png") no-repeat center #fff;
+}
+.java_start_btn{
+    position: absolute;
+    width: 155px;
+    height: 55px;
+    top: 77%;
+    left: 49.3%;
+    margin-left: -72px;
+    background: url(../img/register/java_btn.png) no-repeat center #eef0f4;
+}
+.reg_footer{
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 333px;
+}
+.java_reg_footer{
+    background: url("../img/register/java_register_bottom.png") no-repeat center #fff;
+}
+.java_reg_footer p{
+    font-size: 18px;
+    color: red;
+    position: absolute;
+}
+.android_reg_footer p{
+    font-size: 18px;
+    color: red;
+    position: absolute;
+}
+.android_reg_footer .tips-03{
+    right: 268px;
+    top: 111px;
+    pointer-events: none;
+    display: none;
+}
+.java_reg_footer .tips-03{
+    right: 195px;
+    top: 112px;
+    pointer-events: none;
+    display: none;
+}
+.android_reg_footer .tips-04{
+    right: 268px;
+    top: 170px;
+    pointer-events: none;
+    display: none;
+}
+.java_reg_footer .tips-04{
+    right: 195px;
+    top: 169px;
+    pointer-events: none;
+    display: none;
+}
+.reg_footer input{
+    height: 34px;
+    font-size: 18px;
+    color: #1e1d1d;
+    vertical-align: middle;
+    /*text-align: center;*/
+    text-indent: 5px;
+}
+ input:focus{
+    outline: none;
+}
+.reg_footer_name{
+    position: absolute;
+    left: 68.1%;
+    top: 106px;
+    width: 194px;
+}
+.reg_footer_tel{
+    position: absolute;
+    left: 69.6%;
+    top: 164.5px;
+    width: 177px;
+}
+.reg_btn_bottom{
+    position: absolute;
+    width: 164px;
+    height: 96px;
+    right: 0;
+    top: 105px;
+    background: url("../img/register/java_btn_bottom.png") no-repeat center #000;
+}
+ /*android css start*/
+.android_form1{
+    top: 626px;
+    background: url("../img/register/android_register_top.png") no-repeat center ;
+}
+.android_reg_header{
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 1708px;
+    background: url("../img/register/android_bg.png") no-repeat top center #fff;
+}
+.android_reg_footer{
+    background: url("../img/register/android_footer.png") no-repeat center #fff;
+}
+.android_reg_btn_bottom{
+    position: absolute;
+    width: 164px;
+    height: 96px;
+    right: 0;
+    top: 105px;
+    background: url("../img/register/android_btn_footer.png") no-repeat center #183867;
+}
+.android_reg_footer_name{
+    position: absolute;
+    left: 62.3%;
+    top: 106px;
+    width: 191px;
+}
+.android_reg_footer_tel{
+    position: absolute;
+    left: 63.6%;
+    top: 164.5px;
+    width: 175px;
+}
+.android_reg_content{
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 1335px;
+    background: url("../img/register/android_content.png") no-repeat center #fff;
+}
+.android_reg_btn{
+    position: absolute;
+    width: 155px;
+    height: 51px;
+    top: 47%;
+    left: 50%;
+    margin-left: -72px;
+    background: url(../img/register/android_start_btn.png) no-repeat center #eef0f4;
+}
+
+
+
+
+
+
+
+/*提示框*/
+.ch_div a {
+    display: block;
+    width: 135px;
+    height: 70px;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+.ch_div .phone_div {
+    display: none;
+    background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/newphp/cehuanei.png') 0 0 no-repeat;
+    width: 267px;
+    height: 52px;
+    position: relative;
+    left: 158px;
+    top: -60px;
+}
+.ch_div .phone_text {
+    float: left;
+    background: #fff;
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    color: #969696;
+    margin-left: 15px;
+    margin-top: 6px;
+    padding-left: 10px;
+}
+.ch_div .mfhd {
+    background: #000;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    width: 70px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.targer_div {
+    display: none;
+    text-align: center;
+    background: url('http://iotekseo.b0.upaiyun.com/sem/img/targer_bg.png') 0 0 no-repeat;
+    width: 378px;
+    height: 413px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -189px;
+    margin-top: -206px;
+    z-index: 1002222;
+}
+.targer_div .cancle_img {
+    float: right;
+    padding: 15px;
+    cursor: pointer;
+}
+.targer_div .true_img {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+.targer_div .text_true {
+    font-size: 20px;
+    color: #444;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#true_btn {
+    cursor: pointer;
+}

@@ -1,0 +1,295 @@
+#dowebok {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#dowebok .section {
+  width: 100%;
+}
+#dowebok .f1 {
+  margin: 0 auto;
+  position: relative;
+}
+#dowebok .f1 a {
+  position: absolute;
+  display: inline-block;
+  width: 6.5rem;
+  height: 2rem;
+  background: url("http://iotekcdn.b0.upaiyun.com/sem-static/m/images/java_m/ld_java_wyngx.png");
+  background-size: 100% 100%;
+  color: rgba(0, 0, 0, 0);
+  bottom: 2.825rem;
+  left: 50%;
+  margin-left: -3.25rem;
+}
+#dowebok .f2 {
+  margin: 0 auto;
+}
+#dowebok .f3 {
+  margin: 0 auto;
+}
+#dowebok .f4 {
+  margin: 0 auto;
+  position: relative;
+}
+#dowebok .f4 .xiaobao {
+  display: inline-block;
+  width: 6.25rem;
+  height: 1.725rem;
+  position: absolute;
+  background: url("http://iotekcdn.b0.upaiyun.com/sem-static/m/images/java_m/ld_java_xbrm.png") no-repeat top center;
+  background-size: 100% 100%;
+  color: rgba(0, 0, 0, 0);
+  bottom: 2.775rem;
+  left: 2.125rem;
+}
+#dowebok .f4 .jineng {
+  display: inline-block;
+  width: 6.25rem;
+  height: 1.725rem;
+  position: absolute;
+  background: url("http://iotekcdn.b0.upaiyun.com/sem-static/m/images/java_m/ld_java_tsjn.png") no-repeat top center;
+  background-size: 100% 100%;
+  color: rgba(0, 0, 0, 0);
+  bottom: 2.775rem;
+  right: 2.125rem;
+}
+#dowebok .f5 {
+  margin: 0 auto;
+}
+#dowebok .f6 {
+  margin: 0 auto;
+}
+#dowebok .f7 {
+  margin: 0 auto;
+}
+#dowebok .f8 {
+  margin: 0 auto;
+}
+#dowebok .f9 {
+  margin: 0 auto;
+}
+.f11 {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  height: 3rem;
+  z-index: 100000000000000000000000000;
+}
+.f11 img{
+  position: absolute;
+  bottom: 0;
+}
+.f11 .wysx{
+  width: 8.975rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.f11 .ljzx{
+  width: 8.975rem;
+  height: 3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.zhuce {
+  margin: 0 auto;
+}
+.zhuce .section {
+}
+.zhuce .f10 {
+  margin: 0 auto;
+  position: relative;
+  height: 34rem;
+}
+.zhuce .f10 a {
+  position: absolute;
+  display: inline-block;
+  width: 6.5rem;
+  height: 2rem;
+  background: url("http://iotekcdn.b0.upaiyun.com/sem-static/m/images/java_m/ld_java_jiaru.png");
+  background-size: 100% 100%;
+  color: rgba(0, 0, 0, 0);
+  bottom: 11.75%;
+  left: 50%;
+  margin-left: -3.25rem;
+  z-index: 1000000000000000;
+}
+.zhuce .f10 .shuru_form {
+  display: inline-block;
+  position: absolute;
+  bottom: 19.88%;
+  width: 13.5rem;
+  left: 50%;
+  margin-left: -6.75rem;
+  z-index: 10000000000000000000000000;
+}
+.zhuce .f10 .shuru_form .name_user {
+  display: inline-block;
+  width: 13.5rem;
+  height: 2rem;
+  border: solid 1px #ccc;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+.zhuce .f10 .shuru_form .name_user .xiao_tit {
+  display: inline-block;
+  float: left;
+  padding-top: 0.4rem;
+}
+.zhuce .f10 .shuru_form .name_user .xiao_tit span {
+  display: inline-block;
+  height: 1.25rem;
+  width: 4rem;
+  border-right: solid 1px #ccc;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #666;
+}
+.zhuce .f10 .shuru_form .name_user .ss_mz {
+  color: red;
+  display: inline-block;
+  width: 5rem;
+  font-size: 0.5rem;
+  position: absolute;
+  right: 1em;
+  top: 0.5rem;
+  text-align: right;
+  display: none;
+}
+.zhuce .f10 .shuru_form .name_user input {
+  height: 1rem;
+  width: 9rem;
+  line-height: 1rem;
+  border-style: none;
+  background: none;
+  float: right;
+  font-size: 0.75rem;
+  color: #aaa;
+  outline: none;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.zhuce .f10 .shuru_form .name_user input:focus {
+  border: 0;
+}
+.zhuce .f10 .shuru_form .tel_number {
+  display: inline-block;
+  width: 13.5rem;
+  height: 2rem;
+  border: solid 1px #ccc;
+  position: relative;
+}
+.zhuce .f10 .shuru_form .tel_number .xiao_tit {
+  display: inline-block;
+  float: left;
+  padding-top: 0.3rem;
+}
+.zhuce .f10 .shuru_form .tel_number .xiao_tit span {
+  display: inline-block;
+  height: 1.25rem;
+  width: 4rem;
+  border-right: solid 1px #ccc;
+  font-size: 0.75rem;
+  line-height: 1.35rem;
+  text-align: center;
+  color: #666;
+}
+.zhuce .f10 .shuru_form .tel_number .ss_tel {
+  color: red;
+  display: inline-block;
+  width: 5rem;
+  font-size: 0.5rem;
+  position: absolute;
+  right: 1em;
+  top: 0.5rem;
+  text-align: right;
+  display: none;
+}
+.zhuce .f10 .shuru_form .tel_number input {
+  height: 1rem;
+  width: 9rem;
+  line-height: 1rem;
+  border-style: none;
+  background: none;
+  float: right;
+  font-size: 0.75rem;
+  color: #aaa;
+  outline: none;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.zhuce .f10 .shuru_form .tel_number input:focus {
+  border: 0px;
+}
+
+
+/*悬浮框*/
+.xuanfu{
+  position: absolute;
+  right: 0.5rem;
+  top: 3.5rem;
+}
+.xuanfu a{
+  display: inline-block;
+  width: 1.75rem;
+  height: 6rem;
+  background: url("http://iotekcdn.b0.upaiyun.com/sem-static/m/images/java_m/ld_java-xf.png");
+  background-size: 100% 100%;
+}
+img{
+  display: block;
+}
+/*提交成功提示*/
+.targer_div {
+  display: none;
+  text-align: center;
+  background: url('http://iotekseo.b0.upaiyun.com/sem/img/targer_bg.png') 0 0 no-repeat;
+  width: 9.45rem;
+  height: 14rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -4.725rem;
+  margin-top: -5.15rem;
+  z-index: 10000000000000000000000;
+}
+.targer_div .cancle_img {
+  float: right;
+  padding: 0.375rem;
+  cursor: pointer;
+}
+.targer_div .true_img {
+  margin-top: 2.5rem;
+  margin-left: 2.3rem;
+}
+.targer_div .text_true {
+  font-size: 0.5rem;
+  color: #444;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom:0.75rem;
+  text-align: center;
+  background-color: #fff;
+}
+#true_btn {
+  cursor: pointer;
+  margin: 0 auto;
+}
+.LR-BTN {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 31px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .16);
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #00a6f1;
+}
+#LRdiv3{
+  display: none !important;
+}

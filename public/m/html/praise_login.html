@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <title>职坐标 - IT在线学习网站！轻松学编程，快乐找工作！</title>
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/praise.css">
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/common/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/sem-static/m/js/jquery.fullPage.min.js"></script>
+    <script>
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function(){
+            getFont();
+        }
+        function getFont(){
+            var screenWidth = oHtml.clientWidth;
+            if(screenWidth <= 320){
+                oHtml.style.fontSize = '17.778px';
+            }else if(screenWidth >= 640){
+                oHtml.style.fontSize = '35.556px';
+            }else{
+                oHtml.style.fontSize = screenWidth/(720/40)+'px';
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="f9">
+    <div class="page_login">
+        <div class="main">
+            <div class="login_zh clearfix">
+                <div class="rentou"><img src="http://iotekcdn.b0.upaiyun.com/sem-static/m/images/praise/xiaorentou.png"></div>
+                <input id="my_phone" class="zhanghao"type="tel" maxlength="11" name="phone" placeholder="手机号/邮箱"/>
+                <span class="zhbcz">账号不存在</span>
+            </div>
+            <div class="login_mm clearfix">
+                <div class="suo"><img src="http://iotekcdn.b0.upaiyun.com/sem-static/m/images/praise/suo.png"></div>
+                <input id="my_mima" class="mima"type="password" name="password" placeholder="密码"/>
+                <span class="mmcw">密码错误</span>
+            </div>
+            <button id="entry" class="login">登录</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.page_login').height($(window).height());
+        $('.f9').height($(window).height());
+
+//        $("input").focus(function () {
+////            $('.main').css('bottom','0rem');
+//            $('.main').css({
+//                top: '50%',
+//                marginTop:'-4.9rem',
+//            });
+//            $('.page_login').css({
+//                background: 'url()',
+//                backgroundColor:'#000',
+//                backgroundSize:"100% 100%"
+//            });
+//            $('.login').hide();
+//        });
+//        $("input").blur(function () {
+////            $('.main').css('bottom','4.75rem');
+//            $('.main').css({
+//                bottom:  '4.75rem',
+//                top: '',
+//                marginTop:''
+//            });
+//            $('.page_login').css({
+//                background: 'url(http://iotekcdn.b0.upaiyun.com/sem-static/m/images/praise/kb_01.png) no-repeat top center',
+//                backgroundColor:'',
+//                backgroundSize:"100% 100%"
+//            });
+//            $('.login').show();
+//        });
+        var myHeight=$(document).height();
+        $('.section').css('height',myHeight);
+        $("#my_phone").focus(function () {
+            $(".zhbcz").hide();
+        });
+        $("#my_mima").focus(function () {
+            $(".mmcw").hide();
+        });
+        $("#entry").click(function () {
+            var phoneNabder = $('#my_phone').val();
+            //        手机号
+            var phoneReg = /^0{0,1}(13[0-9]|15[0-9]|14[5|7|9]|17[0-9]|18[0-9])[0-9]{8}$/;
+            if(phoneNabder.length==0){
+                $(".zhbcz").html('请输入手机号').show();
+                return false;
+            }
+            if (/^[0-9]*[1-9][0-9]*$/.test(phoneNabder)) {
+                if (!phoneReg.test(phoneNabder)) {
+                    $(".zhbcz").html('请输入正确的手机号').show();
+                    flag = false;
+                    return false;
+
+                } else {
+                    flag = true;
+
+
+                }
+            } else {
+                $(".zhbcz").html('请输入正确的手机号').show();
+                flag = false;
+                return false;
+            }
+            var mm = $('#my_mima').val();
+            if (mm == '') {
+                $(".mmcw").show();
+            }
+            $.ajax({
+                url: 'http://192.168.8.219:8003/user/generalizeLogin',
+                type: 'GET',
+                dataType: 'jsonp',
+                data: {
+                    'username': phoneNabder,
+                    'password': mm,
+                },
+                success: function (jsonp) {
+                    var msg = '';
+                    if (jsonp) {
+
+                        if (jsonp.code === 0) {
+                        //有资格页面跳转
+                            window.location.href="http://192.168.8.219/sem/m/html/praise_share.html?userId=" + jsonp.result.userId;
+
+                        } else if (jsonp.code === 1) {
+                            $('.zhbcz').show();
+                        //用户名不存在
+
+
+                        } else if (jsonp.code === -1) {
+                            $(".mmcw").show();
+                            //密码错误
+
+                        }
+                        else if (jsonp.code === 3) {
+                            //没有资格页面跳转
+                            window.location.href="http://192.168.8.219/sem/m/html/praise_lose.html";
+                        }
+                    }
+
+                },
+
+            });
+        });
+
+
+
+    });
+</script>

@@ -1,0 +1,558 @@
+.green{
+  color:#00eaa9;
+  font-size: 30px;
+  font-weight: normal; 
+  text-align: center;
+  padding-top: 60px;
+}
+.green_big{
+  color:#00eaa9;
+  font-size: 60px;
+  font-weight: normal; 
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+.white_big{
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top:  45px;
+}
+.content {
+  width: 100%;
+  min-width: 1200px;
+}
+.content .f_nnn {
+  position: relative;
+}
+.content .f_nnn a {
+  position: absolute;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 80px;
+  border-radius: 10px;
+}
+.content .f_1200 {
+  min-width: 1200px;
+  text-align: center;
+}
+
+.content .f_1200 p {
+  font-weight: normal;
+  color: #00eaa9;
+  font-size: 36px;
+  line-height: 50px;
+  width: 1100px;
+  margin: 0 auto;
+
+}
+.content .f_1200 .green_wenzi{
+    padding-top: 250px;
+}
+.content .f_1200 .white_wenzi{
+  color: #fff;
+    padding-top:155px;
+}
+.content .f_1200 a{
+  display: inline-block;
+  width:  263px;
+  height:  80px;
+  margin:  110px auto 0;
+}
+.content .f_1200 .jikejiaru{
+  display: inline-block;
+  width:  200px;
+  height:  65px;
+  border: solid 1px #001c58;
+  border-radius: 14px;
+  background-color: #fff;
+  z-index: 20;
+margin-left: -100px;
+color: #001c58;
+line-height: 65px;
+text-align: center;
+font-size: 22px;
+bottom:  70px;
+}
+.content .f_1200 .alianjie{
+   width:  220px;
+  height:  70px;
+  position: absolute;
+  bottom:  60px;
+  left:  50%;
+  margin-left: -110px;
+}
+.content .f_1200 .study_alone{
+  bottom:  80px;
+}
+.content .f_1200 .how_long{
+  bottom:  50px;
+}
+.content .f_1200 .money{
+  bottom:  75px;
+}
+.content .f_1200 .do_what{
+  bottom:  50px;
+}
+.content .f_1200 .good{
+  bottom:  70px;
+}
+.content .f_1200 .fire{
+  bottom:  64px;
+}
+.content .f_1200 .my_cd {
+  width: 1000px;
+  height: 518px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+.content .f_1200 .my_cd img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.content .f_1200 .my_cd .video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.content .f_1200 .material {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+.content .f_1200 .material .f2 {
+  display: inline-block;
+  float: left;
+  margin-right: 39px;
+}
+.content .f_1200 .material .f2 span {
+  font-size: 26px;
+  color: #212121;
+  line-height: 75px;
+}
+.content .f_1200 .material .f2 p {
+  font-size: 20px;
+  color: #444;
+  text-align: left;
+  line-height: 41px;
+  padding-left: 22px;
+}
+.content .f_1200 .material .no_rt {
+  margin-right: 0;
+}
+.content .f_1200 .f4 {
+  width: 1200px;
+  height: 975px;
+  margin: 0 auto;
+  position: relative;
+}
+.content .f_1200 .f4 a {
+  position: absolute;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  background: #333;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 100px;
+  border-radius: 10px;
+}
+.content .f_1200 .f4 .rolling {
+  width: 1100px;
+  height: 700px;
+  margin: 46px auto 0;
+  background-color: #ececec;
+}
+.content .f_1200 .f4 .rolling .xy_title {
+  width: 1100px;
+  height: 52px;
+}
+.content .f_1200 .f4 .rolling .gundong {
+  width: 1100px;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+.content .f_1200 .f4 .rolling .gundong #andyscroll {
+  width: 1100px;
+  height: 448px;
+  overflow: hidden;
+}
+.content .f_1200 .f4 .rolling .gundong #andyscroll #scrollmessage {
+  height:491px;
+  width: 1100px;
+}
+.content .f_1200 .f4 .rolling .gundong .renyuan {
+  width: 1000px;
+  height: 600px;
+  background-color: pink;
+}
+.content .dw_01 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: 1000px;
+}
+.content .dw_01 span {
+  position: absolute;
+  font-size: 48px;
+  color: #1f1f1f;
+}
+.content .dw_01 p {
+  position: absolute;
+  font-size: 28px;
+  color: #fff;
+  line-height: 83px;
+}
+.content .dw_01 .f3_01 {
+  left: 250px;
+  top: 192px;
+}
+.content .dw_01 .f3_02 {
+  left: 845px;
+  top: 192px;
+}
+.content .dw_01 .f3_03 {
+  left: 96px;
+  top: 314px;
+}
+.content .dw_01 .f3_04 {
+  left: 683px;
+  top: 314px;
+}
+.content .f5 {
+  position: relative;
+}
+.content .f5 .xinlai {
+  font-size: 30px;
+  color: #dddddd;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -164px;
+  top: 140px;
+}
+#cnzz_stat_icon_1255814405 {
+  display: none;
+}
+
+.php_hot{
+  width:  1000px;
+  margin: 0 auto;
+}
+.php_hot li{
+  float: left;
+  width:  206px;
+  font-size: 16px;
+  color: #353535;
+  margin-top: 375px;
+  margin-left: 35px;
+  text-align: left;
+}
+.php_hot .php_hot_first{
+  margin-left: 38px;
+}
+.php_plan li{
+ margin-top: 385px;
+}
+.php_do{
+  width:  1000px;
+  margin: 0 auto;
+}
+.php_do li{
+  width:  137px;
+  font-size: 14px;
+  color: #3e3e3e;
+  margin-top: 132px;
+  margin-left: 448px;
+  text-align: left;
+}
+.php_do .php_do2{
+  margin-top: 70px;
+  margin-left: 232px;
+}
+.php_do .php_do3{
+   margin-top: 109px;
+  margin-left: 232px;
+}
+.php_do .php_do4{
+  width:  193px;
+   margin-top: 63px;
+    margin-left: 455px;
+}
+.content .f_1200 .job{
+  font-size: 18.5px;
+  color: #252525;
+  text-align: center;
+}
+.content .f_1200 .mat_430{
+  margin-top: 430px;
+}
+.content .f_1200 .mat_10{
+  margin-top: -10px;
+}
+.php_teacher li{
+  font-size: 18px;
+  color: #1e1e1e;
+  width:  270px;
+  margin-top: 220px;
+}
+.php_teacher .php_teacher1{
+  margin-left: 5px;
+}
+.php_teacher .php_teacher2{
+  margin-left: 420px;
+}
+.php_teacher .php_teacher3{
+  margin-left: 5px;
+   margin-top: 165px;
+}
+.php_teacher .php_teacher4{
+  margin-left: 420px;
+   margin-top: 165px;
+}
+.fl{
+  float: left;
+}
+.stage{
+  width:  800px;
+  margin:  0 auto;
+}
+.stage4,.stage8{
+  width:  304px;
+  margin-left: 87px;
+  margin-top: 100px;
+  font-size: 16px;
+  color: #272727;
+  -ms-text-align-last: left;
+  text-align-last: left;
+}
+.stage4 li{
+  margin-top: 65px;
+  line-height: 25px;
+  text-align: left;
+}
+.stage8 li{
+ margin-top: 135px;
+  line-height: 25px;
+  text-align: left;
+}
+.stage4 .stage_two{
+  margin-top: 85px;
+}
+.stage8 .stage_two{
+  margin-top: 61px;
+}
+.stage8 .stage_three{
+  margin-top: 64px;
+}
+.stage8 .stage_for{
+  margin-top: 66px;
+}
+
+
+
+/* tab */
+.f_tab{
+  position: relative;
+  top:  -160px;
+}
+.f_tab ul li {
+    width: 1100px;
+    height: 700px;
+    z-index: 10;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -550px;
+    display: none;
+}
+
+.f_tab ol {
+    width: 1100px;
+    height: 175px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -550px;
+    z-index: 11;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.f_tab ol li {
+    width: 218px;
+        height: 175px;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+     /*  border: 1px solid #000; */
+}
+.content .f_1200 .tab_a{
+  margin-left: 130px;
+  z-index: 100;
+  bottom: 96px;
+  width:  220px;
+}
+
+
+/*侧滑*/
+.ch_div {
+  position: absolute;
+  left: 5px;
+  top: 30%;
+  margin-top: 0px;
+  width: 160px;
+  height: 500px;
+  background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/newphp/cehua3.png') 0 0 no-repeat;
+  z-index: 100;
+  /*侧滑 手机*/
+}
+.ch_div a {
+  display: block;
+  width: 135px;
+  height: 70px;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+.ch_div .phone_div {
+  display: none;
+  background: url('http://iotekcdn.b0.upaiyun.com/sem-static/img/newphp/cehuanei.png') 0 0 no-repeat;
+  width: 267px;
+  height: 52px;
+  position: relative;
+  left: 158px;
+  top: -60px;
+}
+.ch_div .phone_text {
+  float: left;
+  background: #fff;
+  width: 165px;
+  height: 40px;
+  line-height: 40px;
+  color: #969696;
+  margin-left: 15px;
+  margin-top: 6px;
+  padding-left: 10px;
+}
+.ch_div .mfhd {
+  background: #000;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+  float: left;
+  width: 70px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.targer_div {
+  display: none;
+  text-align: center;
+  background: url('http://iotekseo.b0.upaiyun.com/sem/img/targer_bg.png') 0 0 no-repeat;
+  width: 378px;
+  height: 413px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -189px;
+  margin-top: -206px;
+  z-index: 1002222;
+}
+.targer_div .cancle_img {
+  float: right;
+  padding: 15px;
+  cursor: pointer;
+}
+.targer_div .cancle_img .true_img {
+  margin-top: 100px;
+  margin-left: 40px;
+}
+.targer_div .cancle_img .text_true {
+  font-size: 20px;
+  color: #444;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+#true_btn {
+  cursor: pointer;
+}
+
+/* 表 */
+.content .fotter {
+    position: absolute;
+    display: inline-block;
+    width: 843px;
+    height: 446px;
+    left: 50%;
+    margin-left: -421px;
+
+}
+
+
+.content .fotter p {
+    text-align: center;
+    font-size: 22px;
+    height: 52px;
+    color: #fff;
+}
+
+.content .fotter .lh {
+    margin-top: 28px;
+    height: 52px;
+    line-height: 52px;
+}
+
+.content .fotter input {
+    width: 453px;
+    height: 52px;
+    background-color: #fff;
+    border: medium none;
+    outline: none;
+    line-height: 52px;
+    text-indent: 1em;
+    font-size: 18px;
+    padding-right: 10px;
+    border-radius: 4px;
+}
+
+.content .tishi {
+    color: #dd001f;
+    margin-left: -137px;
+    font-size: 20px;
+    display: none;
+}
+
+.content .tishi2 {
+    color: #dd001f;
+    margin-left: -197px;
+    font-size: 20px;
+    display: none;
+}
+.content .sub{
+  width:  241px;
+  height:  62px;
+  background-color: #32b16c;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 15px;
+  margin-top: 53px;
+}
+

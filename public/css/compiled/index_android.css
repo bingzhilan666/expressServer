@@ -1,0 +1,444 @@
+.content {
+  width: 100%;
+  min-width: 1200px;
+}
+.content .f_1200 {
+  min-width: 1200px;
+  text-align: center;
+}
+.content .f_1200 h1 {
+  font-weight: normal;
+  color: #cd0303;
+  font-size: 52px;
+  line-height: 75px;
+  width: 1100px;
+  border-bottom: solid 1px #a0a0a0;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.content .f_1200 .my_cd {
+  width: 1000px;
+  height: 518px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+.content .f_1200 .my_cd img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.content .f_1200 .my_cd .video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.content .f_1200 .material {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+.content .f_1200 .material .f2 {
+  display: inline-block;
+  float: left;
+  margin-right: 39px;
+}
+.content .f_1200 .material .f2 span {
+  font-size: 26px;
+  color: #212121;
+  line-height: 75px;
+}
+.content .f_1200 .material .f2 p {
+  font-size: 20px;
+  color: #444;
+  text-align: left;
+  line-height: 41px;
+  padding-left: 22px;
+}
+.content .f_1200 .material .no_rt {
+  margin-right: 0;
+}
+.content .f_1200 .f4 {
+  width: 1200px;
+  height: 817px;
+  margin: 0 auto;
+}
+.content .f_1200 .f4 .rolling {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+}
+.content .f_1200 .f4 .rolling .xy_title {
+  width: 1000px;
+  height: 52px;
+}
+.content .f_1200 .f4 .rolling .gundong {
+  width: 1000px;
+  height: 448px;
+  overflow: hidden;
+  position: relative;
+}
+.content .f_1200 .f4 .rolling .gundong #andyscroll {
+  width: 1000px;
+  height: 448px;
+  overflow: hidden;
+}
+.content .f_1200 .f4 .rolling .gundong #andyscroll #scrollmessage {
+  height: 902px;
+  width: 1000px;
+}
+.content .f_1200 .f4 .rolling .gundong .renyuan {
+  width: 1000px;
+  height: 600px;
+  background-color: pink;
+}
+.content .dw_01 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: 1000px;
+}
+.content .dw_01 span {
+  position: absolute;
+  font-size: 48px;
+  color: #1f1f1f;
+}
+.content .dw_01 p {
+  position: absolute;
+  font-size: 28px;
+  color: #fff;
+  line-height: 83px;
+}
+.content .dw_01 .f3_01 {
+  left: 250px;
+  top: 192px;
+}
+.content .dw_01 .f3_02 {
+  left: 845px;
+  top: 192px;
+}
+.content .dw_01 .f3_03 {
+  left: 96px;
+  top: 314px;
+}
+.content .dw_01 .f3_04 {
+  left: 683px;
+  top: 314px;
+}
+.content .f5 {
+  position: relative;
+}
+.content .f5 .xinlai {
+  font-size: 30px;
+  color: #dddddd;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -164px;
+  top: 140px;
+}
+.sem-header-container {
+  height: 80px;
+  width: 100%;
+  min-width: 1200px;
+}
+.sem-header-container .content {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+}
+.sem-header-container .content .hd_logo {
+  float: left;
+}
+.sem-header-container .content img {
+  margin-top: 20px;
+}
+.sem-header-container .content ul {
+  display: inline-block;
+  margin-left: 115px;
+  margin-top: 30px;
+}
+.sem-header-container .content ul li {
+  float: left;
+  margin-right: 26px;
+}
+.sem-header-container .content ul li a {
+  font-size: 16px;
+  display: inline-block;
+  height: 26px;
+  color: #111;
+}
+.sem-header-container .content ul li .current {
+  border-bottom: 3px solid #de0000;
+}
+.sem-header-container .content ul li a:hover {
+  border-bottom: 3px solid #de0000;
+}
+.sem_footer {
+  width: 100%;
+  height: 80px;
+  background-color: #333;
+  min-width: 1200px;
+}
+.sem_footer p {
+  color: #999;
+  text-align: center;
+  line-height: 80px;
+  font-size: 18px;
+}
+body {
+  background-color: #fff;
+}
+.banner {
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+  text-align: center;
+  position: relative;
+}
+.banner img {
+  margin: 160px auto;
+}
+.banner a {
+  width: 386px;
+  height: 64px;
+  position: absolute;
+  bottom: 168px;
+  left: 50%;
+  margin-left: -193px;
+}
+.three_class {
+  width: 1200px;
+  height: 470px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.three_class li {
+  margin: 0 10px;
+  float: left;
+  transition: all 0.3s;
+}
+.three_class li .img_div {
+  margin-bottom: 10px;
+  width: 380px;
+  height: 260px;
+}
+.three_class li .img_div img {
+  width: 380px;
+  height: 260px;
+}
+.three_class li .class_text {
+  width: 380px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  padding: 0 0 0 50px;
+}
+.three_class li .class_text .title {
+  line-height: 40px;
+  font-size: 20px;
+  color: #212121;
+}
+.three_class li .class_text .abstract {
+  color: #3b3b3b;
+  line-height: 28px;
+  font-size: 14px;
+}
+.three_class li .class_text .abstract span {
+  color: #d70000;
+}
+.three_class li:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: -10px;
+}
+.red {
+  font-size: 48px;
+  color: #ff0000;
+  line-height: 76px;
+}
+.white {
+  font-size: 36px;
+  color: #fff;
+  line-height: 70px;
+}
+.black {
+  font-size: 36px;
+  color: #3b3b3b;
+  line-height: 70px;
+}
+.white_big {
+  color: #fff;
+  font-size: 48px;
+  line-height: 76px;
+  text-align: center;
+}
+.gray {
+  color: #ccc;
+  font-size: 36px;
+  text-align: center;
+  line-height: 64px;
+}
+.train {
+  width: 100%;
+  min-width: 1200px;
+  height: 760px;
+  padding-top: 66px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  text-align: center;
+  background: url(../../img/index_an_ja_ph/index_student.png) top center no-repeat;
+}
+.train ul {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.train ul li {
+  float: left;
+  width: 210px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+  position: absolute;
+  top: 289px;
+}
+.train ul .zero {
+  left: 73px;
+}
+.train ul .base {
+  left: 344px;
+}
+.train ul .student {
+  right: 353px;
+}
+.train ul .worker {
+  right: 74px;
+}
+.teacher {
+  padding-top: 56px;
+  height: 1016px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+.teacher .red {
+  text-align: center;
+}
+.teacher .black {
+  text-align: center;
+}
+.teacher .img_div {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.teacher .img_div li {
+  float: left;
+  width: 215px;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 370px;
+  text-align-last: left;
+}
+.teacher .img_div .teacher_1 {
+  left: 51px;
+}
+.teacher .img_div .teacher_2 {
+  left: 350px;
+}
+.teacher .img_div .teacher_3 {
+  right: 342px;
+}
+.teacher .img_div .teacher_4 {
+  right: 40px;
+}
+.star_student {
+  min-width: 1200px;
+  background: url('../../img/index_an_ja_ph/index_youming.png') top center no-repeat;
+  padding-top: 70px;
+  height: 1000px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+.star_student ul {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.star_student ul li {
+  position: absolute;
+  top: 100px;
+}
+.star_student ul li h4 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #ddd;
+}
+.star_student ul li p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 37px;
+  width: 250px;
+}
+.star_student ul li p span {
+  color: #c52828;
+  font-weight: bold;
+}
+.star_student ul .student_wan {
+  left: 295px;
+}
+.star_student ul .student_zhu {
+  right: 90px;
+}
+.star_student ul .student_xu {
+  top: 430px;
+  left: 295px;
+}
+.star_student ul .student_li {
+  top: 430px;
+  right: 90px;
+}
+.works {
+  height: 1099px;
+  width: 100%;
+  min-width: 1200px;
+  padding-top: 64px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  background: url('../../img/index_an_ja_ph/index_js.png') top center no-repeat;
+}
+.works .red {
+  text-align: center;
+  font-size: 52px;
+  line-height: 80px;
+}
+.works .black {
+  text-align: center;
+}
+.company {
+  width: 100%;
+  height: 820px;
+  min-width: 1200px;
+  padding-top: 45px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  background: url('../../img/index_an_ja_ph/index_hezuo.png') top center no-repeat;
+}

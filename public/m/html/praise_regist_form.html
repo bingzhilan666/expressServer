@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <title>职坐标 - IT在线学习网站！轻松学编程，快乐找工作！</title>
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/praise.css">
+    <script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/common/jquery-1.8.2.min.js"></script>
+    <script>
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function(){
+            getFont();
+        }
+        function getFont(){
+            var screenWidth = oHtml.clientWidth;
+            if(screenWidth <= 320){
+                oHtml.style.fontSize = '17.778px';
+            }else if(screenWidth >= 640){
+                oHtml.style.fontSize = '35.556px';
+            }else{
+                oHtml.style.fontSize = screenWidth/(720/40)+'px';
+            }
+        }
+    </script>
+    <script>
+        $(function(){
+            $("#register_userName").focus(function () {
+                $(".pls").hide();
+            });
+            $("#register_password").focus(function () {
+                $(".plsma").hide();
+            });
+            $("#dddd").focus(function () {
+                $(".tpyzm").hide();
+            });
+            $("#mobile_code").focus(function () {
+                $(".sjyzm").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="dowebok">
+    <div class="section f8">
+        <div class="float-input-mask"></div>
+        <div class="nue_zhuce">
+            <div class="fl_logo"><img src="http://iotekcdn.b0.upaiyun.com/sem-static/m/images/praise/logo.png" alt=""></div>
+            <div class="jigekuang">
+                <div class="zc_01">
+                    <input type="tel" class="gekai" id="register_userName" placeholder="手机号" maxlength="11">
+                    <span class="pls">请输入手机号</span>
+                </div>
+                <div class="zc_05">
+                    <input class="gekai myyzm" type="text" id="dddd" class="choice" placeholder="验证码">
+                    <img src="" class="huoqu" id="verify_code" style="background-color: #00ee00" alt="">
+                    <span class="tpyzm">验证码错误</span>
+                </div>
+                <div class="zc_02">
+                    <input class="gekai mydxyzm" type="text" id="mobile_code" placeholder="短信验证码">
+                    <button type="button" id="send_mobile_code" name="send_mobile_code" onclick="sendMobileCode(this)" class="huoqu">获取验证码</button>
+                    <span class="sjyzm">验证码错误</span>
+                </div>
+                <div class="zc_03">
+                    <input class="gekai" type="password" id="register_password" placeholder="密码">
+                    <span class="plsma">密码不能为空</span>
+                </div>
+                <div class="zc_04">
+                    <label><input id="fuxuank" name="Fruit" type="checkbox" checked="checked" value="" />我已阅读并同意《职坐标用户协议》</label>
+                </div>
+            </div>
+            <div class="my_cs">选择您感兴趣的课程</div>
+            <div class="choice" id="yixiang">
+                <div class="ml buyiy">
+                    <div class="opt_01 fl_01" ><img src="http://iotekcdn.b0.upaiyun.com/sem-static/m/images/praise/zxx.png"></div>
+                    <input type="text" value="" style="display: none;">
+                    <span>再想想</span>
+                </div>
+                <div class="ml current">
+                    <div class="opt_01 fl_02" ><img src="http://iotekcdn.b0.upaiyun.com/sem-static/m/images/praise/az.png"></div>
+                    <input type="text" value="android" style="display: none;">
+                    <span>Android</span>
+                </div>
+                <div class="ml">
+                    <div class="opt_01 fl_03" ><img src="http://iotekcdn.b0.upaiyun.com/sem-static/m/images/praise/java.png"></div>
+                    <input type="text" value="java" style="display: none;">
+                    <span>Java</span>
+                </div>
+                <div class="ml">
+                    <div class="opt_01 fl_04"><img src="http://iotekcdn.b0.upaiyun.com/sem-static/m/images/praise/php.png"></div>
+                    <input type="text" value="php" style="display: none;">
+                    <span>PHP</span>
+                </div>
+            </div>
+            <button id="enroll">注册</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    $(function(){
+        $('.section').height($(window).height());
+        $('.ml').click(function(event) {
+            $(this).addClass('current').siblings().removeClass('current')
+        });
+        $("#register_userName").focus(function () {
+            $(".pls").hide();
+        });
+    });
+</script>
+<script>
+
+    //在URL中 根据参数名获取参数值
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+
+
+    //    图片验证码
+    $(function () {
+        var img = $('#verify_code');
+        var imgSrc = 'http://192.168.8.219:8003/captcha/generateCaptcha?rd=' + new Date().getTime();
+        img.attr('src', imgSrc);
+        img.attr('src', imgSrc);
+        img.on('click', function () {
+            imgSrc = 'http://192.168.8.219:8003/captcha/generateCaptcha?rd=' + new Date().getTime();
+            img.attr('src', imgSrc);
+
+        })
+    });
+
+    //获取手机验证码
+    var register = {};
+    //设置按钮倒计时
+    var countdown=60;
+    var timeID = 0;
+    /**
+     * 发送手机验证码
+     * @param obj
+     */
+    function sendMobileCode(obj){
+        var mobile= $("#register_userName").val();
+        var phoneReg = /^0{0,1}(13[0-9]|15[0-9]|14[5|7|9]|17[0-9]|18[0-9])[0-9]{8}$/;
+//        }
+
+        var  phoneL=$("#dddd").val();
+        if(phoneL.length==0){
+            $(".tpyzm").html('验证码不能为空').show();
+            return false;
+        }
+        if(mobile.length==0){
+            $(".pls").show();
+            return false;
+        }
+
+        if (/^[0-9]*[1-9][0-9]*$/.test(mobile)) {
+            if (!phoneReg.test(mobile)) {
+                $(".pls").html('请输入正确的手机号').show();
+                flag = false;
+                return false;
+
+            } else {
+                flag = true;
+
+
+            }
+        } else {
+            $(".pls").html('请输入正确的手机号').show();
+            flag = false;
+            return false;
+        }
+        var tud=$('#dddd').val();
+
+        $.ajax({
+            url: 'http://192.168.8.219:8003/u/sendMsg',
+            type: 'GET',
+            dataType: 'jsonp',
+            data: {
+                'phone': mobile,
+                'captchaCode': tud,
+            },
+            success: function (jsonp) {
+                var msg = '';
+                if (jsonp) {
+
+                    if (jsonp.code === -2) {
+                        $('.tpyzm').html('验证码错误').show();
+                        var imgSrc = 'http://192.168.8.219:8003/captcha/generateCaptcha?rd=' + new Date().getTime();
+                        $('#verify_code').attr('src', imgSrc);
+                    }else if (jsonp.code === 1) {
+                        clearTimeout(timeID);
+                        countdown=60;
+                        timeID = 0;
+                        setTime(obj);//开始倒计时
+                    }
+                }
+            },
+        });
+
+    }
+    //倒计时
+    function setTime(obj) {
+        if (countdown == 0) {
+            obj.removeAttribute("disabled");
+            $("#send_mobile_code").html("重新获取").removeClass("submit_btn_grey");
+            $('.huoqu').css('background','linear-gradient(to bottom, #2368c4 , #2a3ebc)');
+            $("#register_userName").removeAttr("readonly");
+            reloadImage("verifyImage");
+            countdown =60;
+            return;
+        } else {
+            obj.setAttribute("disabled","disabled");//设置按钮倒计时期间不可用
+            $('.huoqu').css('background','linear-gradient(to bottom, #999, #999)');
+            $("#register_userName").attr("readonly","readonly");//设置电话号倒计时期间不可变
+            $("#send_mobile_code").html(countdown +"S").addClass("submit_btn_grey");//设置倒计时文字显示
+            countdown--;//倒计时
+        }
+        timeID = setTimeout(function() {setTime(obj) },1000);
+    }
+
+    /**
+     * 校验手机验证码是否为空
+     */
+    function countStrLength(str){
+        var byteLen = 0;
+        for(var i=0; i<str.length; i++){
+            if(str.charCodeAt(i) > 255){
+                byteLen += 2;
+            }else{
+                byteLen++;
+            }
+        }
+        //console.log("strByteLen: "+ byteLen);
+        return byteLen;
+    }
+
+    //   ..........注册..............
+    $("#enroll").click(function () {
+
+//        手机号
+        var mobile= $("#register_userName").val();
+        var phoneReg = /^0{0,1}(13[0-9]|15[0-9]|14[5|7|9]|17[0-9]|18[0-9])[0-9]{8}$/;
+        if(mobile.length==0){
+            $(".pls").show();
+            return false;
+        }
+        if (/^[0-9]*[1-9][0-9]*$/.test(mobile)) {
+            if (!phoneReg.test(mobile)) {
+                $(".pls").html('请输入正确的手机号').show();
+                flag = false;
+                return false;
+
+            } else {
+                flag = true;
+
+
+            }
+        } else {
+            $(".pls").html('请输入正确的手机号').show();
+            flag = false;
+            return false;
+        }
+//        验证码
+        var tpyzm=$('#dddd').val();
+//        短信验证码
+        var  phoneL=$("#mobile_code").val();
+
+//        密码
+        var password = $("#register_password").val();
+        if (tpyzm.length==0){
+            $('.tpyzm').html('验证码不能为空').show();
+            return false;
+        }
+        if(phoneL.length==0){
+            $(".sjyzm").show();
+            return false;
+        }
+
+        if (password == '' || password == null || password == undefined) {
+            $(".plsma").show();
+            return;
+        }else if(/[\u4E00-\u9FA5]/i.test(password) || countStrLength(password) > 16 || countStrLength(password) < 6) {
+            $(".plsma").html("支持6-16位数字、字母、字符").show();
+            return false;
+        }
+
+
+
+
+
+
+        var xuanze=$('#yixiang .current input').val();
+        var userId=getQueryString('userId');
+        var myyzm=$('.myyzm').val();
+        var mydxyzm=$('.mydxyzm').val();
+
+        $.ajax({
+            url: 'http://192.168.8.219:8003/user/generalizeRegister',
+            type: 'GET',
+            dataType: 'jsonp',
+            data: {
+                'username': mobile,
+                'password': password,
+                'type':xuanze,
+                'userId':userId,
+                'code':myyzm,
+                'msgCode':mydxyzm
+            },
+            success: function (jsonp) {
+                var msg = '';
+                if (jsonp) {
+                    var fxChecked=$('#fuxuank').attr('checked');
+
+
+                    if ((jsonp.code === 0) && !!fxChecked) {
+//                        注册成功跳转
+//                        alert('注册成功');
+                        window.location.href="http://192.168.8.219/sem/m/html/praise_register.html";
+
+                    } else if (jsonp.code === 1) {
+                        $('.pls').html('该账号已经注册').show();
+                    } else if (jsonp.code === -1) {
+                        $('.tpyzm').html('验证码错误').show();
+                        var imgSrc = 'http://192.168.8.219:8003/captcha/generateCaptcha?rd=' + new Date().getTime();
+                        $('#verify_code').attr('src', imgSrc);
+                        return false;
+                    } else if (jsonp.code === 3) {
+                        $('.sjyzm').html('验证码错误').show();
+                        return false;
+                    } else if (jsonp.code === 2) {
+                        $('.sjyzm').html('验证码错误').show();
+                        return false;
+                    } else if (jsonp.code === 4) {
+                        $('.sjyzm').html('手机验证码不能为空').show();
+                        return false;
+                    }
+
+
+
+
+
+                }
+            },
+        });
+    });
+</script>

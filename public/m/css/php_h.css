@@ -1,0 +1,92 @@
+html { font-size: 100%; } 
+body { font-size: 1em; }
+.btn-grabseat {
+  height: 7em;
+  width: 28em;
+  position: absolute;
+  top: 89em;
+  left: 16em;
+	background-image: url(../images/php_h/grabseat.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	
+}
+.btn-join{
+  position: absolute;
+  height: 7em;
+  width: 28em;
+	top: 850em;
+	left: 17em;
+	background-image: url(../images/php_h/join.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+
+}
+.consult{
+  height: 20.417em;
+  width: 5.955em;
+  position: absolute;
+  top: 14em;
+  right: 1em;
+	background-image: url(../images/php_h/consult.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+.wsxb{
+	position: absolute;
+	height: 7em;
+	width: 22em;
+	top: 312em;
+	left: 6em;
+	/*background-color: #fff;*/
+}
+.tgjn{
+	position: absolute;
+	height: 7em;
+	width: 22em;
+	top: 312em;
+	right: 6em;
+	/*background-color: #fff;*/
+}
+.fullimage {
+	width: 100%;
+	position:relative;
+}
+.container{
+	width:100%;
+	height:auto;
+}
+.f11 {
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+	height: 10em;
+	z-index: 100000000000000000000000000;
+}
+.f11 img{
+	position: absolute;
+	bottom: 0;
+}
+.f11 .wysx{
+	display: inline-block;
+	width: 49%;
+	height: 10em;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.f11 .ljzx{
+	display: inline-block;
+	width: 49%;
+	height: 10em;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+#LRdiv3{
+	display: none !important;
+}

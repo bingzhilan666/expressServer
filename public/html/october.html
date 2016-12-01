@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>职坐标 - IT在线学习网站！轻松学编程，快乐找工作！</title>
+	<link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/sem-static/css/october.css">
+	<link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/statics/portal/css/newIndex/footer_b_w.css">
+	<link rel="stylesheet" type="text/css" href="http://iotekcdn.b0.upaiyun.com/statics/portal/css/newIndex/header-none-home.css">
+	<script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/common/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/index3/binding.js"></script>
+	<script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/index3/index2.js"></script>
+	<script type="text/javascript" src="http://iotekcdn.b0.upaiyun.com/statics/portal/js/index11/index1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var oImg =$('.daojishi img')
+        	var oInput =$('.f_01 input')
+        	var str = ''; // 将得到的秒数转换成时分秒
+            var timer = null;
+
+                var oNew = new Date(oInput[0].value);
+                clearInterval(timer);
+                timer = setInterval(function(){
+                    var oNow = new Date();  // 获取当前时间
+                    var t = Math.floor((oNew - oNow )/1000) ;  // 将来时间减去当前时间并且转化成秒
+                    
+                        if(t > 0){
+                            str = toTwo(Math.floor(t/86400)) + toTwo(Math.floor(t%86400/3600)) +toTwo(Math.floor(t%86400%3600/60)) + toTwo(t%60) // 将所有的秒转化为天数 时 分 秒 的公式
+                            for(var i = 0; i < str.length; i ++){
+                    
+                                oImg[i].src = 'http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/'+ str.charAt(i) +'.png';
+                            }
+                        }
+
+                    }, 1000)
+
+            function toTwo (n){
+                return n < 10 ? '0' + n : '' + n;
+            }
+
+
+		})
+        
+        </script>
+
+</head>
+<body>
+
+<!-- header start -->
+<div class="f2f2f2_bg clearfix" id="header_namesapce">
+         <div class="index_top clearfix">
+              <a href="http://www.zhizuobiao.com"><img class="index_logo" src="http://iotekcdn.b0.upaiyun.com/statics/portal/images/index3/index_logo-none-home.png"></a>
+
+                               <ul class="index_bnr">
+                    <li id="in_index" class="cur"><a href="http://www.zhizuobiao.com">首页</a></li>
+                                                                                    <li id="course_center_li"><a href="http://www.zhizuobiao.com/courseCenter/index">课程库</a><div class="index_icon hot_top"></div></li>
+
+                      
+                                                                                    <li id="in_index"><a href="http://www.zhizuobiao.com/course/plan">岗位课程</a></li>
+                      
+                                                                                    <li id="in_job_class"><a href="http://www.zhizuobiao.com/educate/class/">就业班</a></li>
+                      
+                                                                                    <li id="community_li"><a href="http://www.zhizuobiao.com/educate/community/">社区</a></li>
+                      
+                                                                                    <li id="in_app"><a href="http://www.zhizuobiao.com/educate/app/">APP</a></li>
+                      
+                                      </ul>
+                  <!-- header-ul -->
+              
+             <div class="index_menber fr">
+                 <input type="text" class="fl search_input fadeOut animated" id="search-h-t" placeholder="请输入搜索内容">
+                 <div class="fl index_icon search_img" id="search_img" si="1"></div>
+                 <div class="fl sculpture" id="sculpture">
+                     <a href="https://passport.zhizuobiao.com/login?service=http://www.zhizuobiao.com" class="login_text">登录</a>
+                     <!--<a class="regist_text">|</a>-->
+                     <a href="https://passport.zhizuobiao.com/register?service=http://www.zhizuobiao.com" class="login_text ">注册</a>
+                 </div>
+             </div>
+              <!-- search-login -->
+
+         </div>
+    </div>
+
+
+<!-- head end -->
+	<div>
+		<div class="f_1200" style="background:url(http://iotekcdn.b0.upaiyun.com/sem-static/img/Oct/f_zj01.png) top center no-repeat; height:797px;">
+			<div class="f_01">
+				<span class="appreciate">10•1 涨价日即将到来</span>
+				<p class="plnow">成为IT工程师，快速行动不宜迟</p>
+				<p class="rednow">距十月涨价潮还有：</p>
+				<div class="daojishi">
+					<img class="sz1" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/0.png" height="65" width="44" alt="">
+					<img class="sz2" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/0.png" height="65" width="44" alt="">
+					<img class="sz3" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/0.png" height="65" width="44" alt="">
+					<img class="sz4" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/0.png" height="65" width="44" alt="">
+					<img class="sz5" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/0.png" height="65" width="44" alt="">
+					<img class="sz6" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/0.png" height="65" width="44" alt="">
+					<img class="sz7" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/0.png" height="65" width="44" alt="">
+					<img class="sz8" src="http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/0.png" height="65" width="44" alt="">
+				</div>
+				<input style="display:none;" type="text" value="Nov 2,2016 00:00:00">
+			</div>			
+		</div>
+		<div class="f_1200" style="background:url(http://iotekcdn.b0.upaiyun.com/sem-static/img/Oct/f_zj02.png) top center no-repeat; height:1653px;">
+			<div class="f_02">
+				<span class="appoint">立即约课，抢末班车原价福利</span>
+				<div class="appoint_list">
+					<div class="appoint_list_01">
+						<p>行业低价</p>
+						<span>学员热情无法挡</span>
+					</div>
+					<div class="appoint_list_02">
+						<p>提高投入</p>
+						<span>助力毕业薪资涨</span>
+					</div>
+					<div class="appoint_list_03">
+						<p>专注口碑</p>
+						<span>就业不再会彷徨</span>
+					</div>
+					<div class="appoint_list_04">
+						<p>课程涨价</p>
+						<span>只为更好地为学员服务</span>
+					</div>
+				</div>
+				<div class="az_list clearfix">
+					<div class="az_list_l">
+						<h1>零基础▪包就业▪Android线上直播班</h1>
+						<p>课程讲解Android工程师必备的Java、Android的技能，结合大<br>量案例和项目详解，并包含名师答疑及包就业服务，帮助你快速<br>掌握Android岗位技能并成功就业。</p>
+						<span>现在参加，3665人与你并肩作战</span>
+					</div>
+					<div class="az_list_r">
+						<span><p>￥</p>7800</span>
+						<a href="http://www.zhizuobiao.com/educate/class/android/" target="_blank">加入课程</a>
+					</div>			
+				</div>
+				<div class="az_list clearfix ja_list">
+					<div class="az_list_l">
+						<h1>零基础▪包就业▪JavaEE线上直播班</h1>
+						<p>课程讲解JavaEE工程师必备的JavaEE技能，结合项目案例分<br>析，包含名师答疑及包就业服务，帮助你快速掌握JavaEE技能<br>并成功就业。</p>
+						<span>现在参加，4521人与你并肩作战</span>
+					</div>
+					<div class="az_list_r">
+						<span><p>￥</p>7800</span>
+						<a href="http://www.zhizuobiao.com/educate/class/java/" target="_blank">加入课程</a>
+					</div>	
+				</div>
+				<div class="az_list clearfix php_list">
+					<div class="az_list_l">
+						<h1>零基础▪包就业▪PHP线上直播班</h1>
+						<p>课程讲解PHP工程师必备的岗位技能，结合项目实战，深入掌握<br>新兴技术。课程涵盖名师答疑及包就业服务。职坐标PHP技能宝<br>典圆你编程梦。</p>
+						<span>现在参加，2547人与你并肩作战</span>
+					</div>
+					<div class="az_list_r">
+						<span><p>￥</p>7800</span>
+						<a href="http://www.zhizuobiao.com/educate/class/php/" target="_blank">加入课程</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="f_1200" style="background:url(http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/f_zj03.png) top center no-repeat; height:599px;">
+			<div class="f_03">
+				<div class="zzb_list">
+					<h2>职坐标课程效率更高</h2>
+					<p>学习速度及学习质量比业界高出20%</p>
+					<span>根据学习数据统计分析结果，提醒学习进度、提<br>升学习质量、缩短学习曲线！</span>
+				</div>
+			</div>
+		</div>
+		<div class="f_1200" style="background:url(http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/f_zj04.png) top center no-repeat; height:598px;">
+			<div class="f_04">
+				<div class="zzb_list">
+					<h2>职坐标课程掌握更深</h2>
+					<p>学员掌握情况对比业界高出50%</p>
+					<span>一对一督学辅导，针对性解觉技术难题，矫正学习<br>态度，改善学习方法，掌握更精更深！</span>
+				</div>
+			</div>
+		</div>
+		<div class="f_1200" style="background:url(http://iotekcdn.b0.upaiyun.com/sem-static/img/Aug/f_zj05.png) top center no-repeat; height:603px;">
+			<div class="f_05">
+				<div class="zzb_list">
+					<h2>职坐标课程就业保障</h2>
+					<p>就业成功率，平均薪资高出业界30%</p>
+					<span>获得具有国家认可权威价值的认证证书，得到微<br>软、中兴、华为等全国知名企业的认可！</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer start -->
+	
+<div class="footer">
+        <div class="bd clearfix">
+          <div class="footer-left clearfix">
+
+				                   <dl>
+                      <dt><span>关于我们</span></dt>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/about/aboutus/" target="_blank">职坐标简介</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/about/contactus/" target="_blank">联系我们</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/about/agreement/" target="_blank">用户协议</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/about/webnews/" target="_blank">网站动态</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/about/copyright/" target="_blank">版权声明</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/about/duty/" target="_blank">免责声明</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/about/press/" target="_blank">网站地图</a></dd>
+                                         </dl>
+ 
+                              <dl>
+                      <dt><span>特色亮点</span></dt>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/feature/item1/" target="_blank">优才计划</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/feature/item2/" target="_blank">助学贷款</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/feature/item4/" target="_blank">保起薪就业</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/feature/item5/" target="_blank">猎头服务</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/feature/item6/" target="_blank">人力资源外包</a></dd>
+                                         </dl>
+
+                              <dl>
+                      <dt><span>帮助中心</span></dt>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/help/fqa/" target="_blank">常见问题</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/help/menber/" target="_blank">成为会员</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/help/edu/" target="_blank">课程学习</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/help/approve/" target="_blank">认证流程</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/help/job/" target="_blank">就业流程</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/help/support/" target="_blank">客服与支持</a></dd>
+                                         </dl>
+              
+
+                              <dl>
+                      <dt><span>机构合作</span></dt>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/cooperate/university/" target="_blank">高校职通车</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/cooperate/enterprise/" target="_blank">企业职通车</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/cooperate/league/" target="_blank">培训联盟</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/cooperate/media/" target="_blank">媒体合作</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/cooperate/links/" target="_blank">友情链接</a></dd>
+                                         </dl>
+              
+                                 <dl class="dl-last">
+                      <dt><span>精英招募</span></dt>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/recruit/teacher/" target="_blank">精英讲师招募</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/recruit/agents/" target="_blank">代理商招募</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/recruit/campus/" target="_blank">校园大使招募</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/recruit/us/" target="_blank">职坐标招聘</a></dd>
+                                            <dd><a href="http://www.zhizuobiao.com/educate/recruit/company/" target="_blank">IT企业招聘</a></dd>
+                                         </dl>
+                      </div>
+        <div class="footer-right">
+          <span class="fl app">
+            <img src="http://iotekcdn.b0.upaiyun.com/statics/portal/images/index3/two-dimension code.jpg">
+            <p>职坐标APP</p>
+          </span>
+          <span class="fr xx">
+            <h2>客服电话</h2>
+            <h3>400-6570-510</h3>
+            <p>周一至周日9:00-21:00</p>
+            <a class="chat" target="_blank" href="http://tb.53kf.com/code/client/10132507/3">
+              <i></i><b>24小时客服在线</b>
+            </a>
+          </span>
+        </div>
+        </div>
+        <div class="footer_bottom">
+          <p>
+            职坐标-IT在线学习网站轻松学编程，快乐找工作！
+          </p>
+          <p>
+            上海海同信息科技有限公司&nbsp;&nbsp;沪ICP备13042190号&nbsp;&nbsp;Copyright&nbsp;Reserved
+          </p>
+        </div>
+      </div>
+
+	<!-- Footer end -->
+</body>
+</html>
